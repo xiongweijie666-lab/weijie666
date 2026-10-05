@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>我的修仙日记 · 技能与成长</title>
+<style>
+:root{--ink:#273b34;--green:#426b55;--paper:#f4f1e8;--muted:#738074}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei",system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:28px 24px}a{color:var(--green);text-underline-offset:3px}.eyebrow{font-size:12px;letter-spacing:3px;color:var(--green);margin:18px 0 10px}h1,h2,h3{font-family:"SimSun",serif}h1{margin:0;font-size:30px;letter-spacing:3px}.intro,.foot{font-size:13px;line-height:1.8;color:var(--muted)}.cast{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:22px 0}button,select{font:inherit;color:inherit}button{border:1px solid #d8dccf;border-radius:10px;background:#faf8f1;cursor:pointer;padding:7px}.cast button[aria-pressed="true"]{border:2px solid var(--green);background:#eaf0e5;padding:6px}.cast img{display:block;width:100%;height:123px;object-fit:contain}.cast strong,.cast span{display:block}.cast strong{font-family:"SimSun",serif;font-size:19px;margin:5px 0}.cast span{font-size:11px;color:var(--muted)}button:focus-visible,select:focus-visible{outline:2px solid #759784;outline-offset:3px}.level-box{background:#faf8f1;border:1px solid #d8dccf;border-radius:12px;padding:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}.level-box label{display:flex;align-items:center;gap:12px;font-size:13px}select{padding:8px 12px;border:1px solid #d8dccf;border-radius:6px;background:#fffdf5}.level-box p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}.summary{margin:20px 0 14px}h2{font-size:25px;letter-spacing:2px;margin:0 0 9px}.summary p{font-size:13px;line-height:1.8;margin:6px 0}.basic{padding:12px 14px;background:#eaf0e5;border:1px solid #d5e0ce;border-radius:9px}.skills{display:grid;grid-template-columns:1fr 1fr;gap:14px}.skill{border:1px solid #d7decd;border-radius:12px;background:#fcfaf4;padding:17px}.skill.locked{background:#eeeee5;border-color:#dbddce}.skill.locked .effect,.skill.locked .resource{color:#70766b}.top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px}.badge{border-radius:5px;background:#e5eddc;padding:5px 7px;color:#426b55}.ultimate .badge{background:#ece5ef;color:#70587e}.passive .badge{background:#e3efe9;color:#356e58}.state{color:var(--green)}.locked .state{color:#74796d}h3{font-size:23px;letter-spacing:1px;margin:14px 0 10px}.effect{font-size:13px;line-height:1.9;min-height:72px;margin:0 0 14px}.resource{font-size:11px;line-height:1.8;border-top:1px solid #e1e3d7;padding-top:10px;margin:0;color:var(--muted)}.foot{margin-top:20px}.status-note{border-top:1px solid #d9dcce;padding-top:15px}@media(max-width:600px){main{padding:22px 15px}.cast{gap:5px}.cast img{height:92px}.cast strong{font-size:14px;white-space:nowrap}.cast span{font-size:10px}.skills{grid-template-columns:1fr}.level-box{align-items:flex-start;flex-direction:column}h1{font-size:27px}.effect{min-height:0}}
+.stage-track{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:12px 0}.stage-track span{border:1px solid #d7decd;border-radius:5px;padding:5px;font-size:11px;text-align:center}.stage-track .current{color:#365e44;background:#e3eddb;border-color:#688763}.bonus{background:#edf0df;padding:8px;font-size:12px;line-height:1.8;color:#6c7c51}.stage-compare{font-size:12px;line-height:1.8}.stage-compare summary{cursor:pointer;color:#426b55}.stage-compare>div{border-top:1px solid #dde0d4;margin:7px 0;padding:7px 0}</style></head>
+<body><main>
+<a href="preview.html">← 人物基础动画</a>
+<p class="eyebrow">我的修仙日记 · 五职业</p><h1>技能与成长</h1>
+<p class="intro">3/5/10/15级分别习得四个技能。一技能12/27级提升，二技能16/30级提升，三技能20/33级提升，终极技能24/36级提升；二阶数值为初阶的120%，三阶为140%，并获得职业附加效果。</p>
+<section class="cast" aria-label="选择职业"></section>
+<section class="level-box" aria-label="技能等级预览"><label>角色等级<select id="level" aria-label="角色等级"></select></label><p id="progress" role="status" aria-live="polite"></p></section>
+<section class="summary" aria-label="普通攻击基准"><h2 id="character-name"></h2><p class="basic" id="normal"></p><p>倍率乘物攻或法攻；普通主动、终极和普攻各占一次回合行动。被动按条件触发。</p></section>
+<section class="skills" aria-label="四个职业技能"></section>
+<p class="foot">技能随角色等级自动解锁。主动技能还需满足法力与回合冷却条件；终极技能需要100怒气。普攻从1级可用，技能不另叠加一次普攻。</p>
+<p class="foot status-note">技能与等级解锁已接入青竹山麓的回合战斗，技能采用三阶段成长与职业附加效果，试玩内可查看技能特效并试演。<br><a href="../first-map-v1/index.html">进入青竹山麓试玩</a> · <a href="../修仙日记-技能三段成长-v5.md">完整三段成长技能表</a> · <a href="skills.json">技能与解锁数据</a></p>
+</main><script type="module">
+import {resolveSkill} from '../first-map-v1/skill-growth.mjs';
+const data=await(await fetch('skills.json')).json();
+const cast=document.querySelector('.cast'),list=document.querySelector('.skills'),levelSelect=document.querySelector('#level');
+let selected=0;
+for(let level=1;level<=data.trialMaxLevel;level++)levelSelect.add(new Option(level+'级',String(level)));
+data.characters.forEach((c,index)=>{
+ const button=document.createElement('button');button.type='button';button.setAttribute('aria-label',c.name+' · '+c.profession);
+ button.innerHTML='<img src="'+c.portrait+'" alt=""><strong>'+c.name+'</strong><span>'+c.profession+'</span>';
+ button.addEventListener('click',()=>{selected=index;render();});cast.append(button);
+});
+function render(){
+ const c=data.characters[selected],level=Number(levelSelect.value),skills=c.skills.map(s=>resolveSkill(data,c.id,s.id,level)),unlocked=skills.filter(s=>s.rank).length,next=skills.filter(s=>s.nextLevel).sort((a,b)=>a.nextLevel-b.nextLevel)[0];
+ [...cast.children].forEach((button,index)=>button.setAttribute('aria-pressed',String(index===selected)));
+ document.querySelector('#character-name').textContent=c.name+' · '+c.profession;
+ document.querySelector('#normal').textContent='普通攻击基础 · 1级可用 · '+c.normalAttack.effect+'。不消耗法力，被动按阶段另行触发。';
+ document.querySelector('#progress').textContent='当前'+level+'级，已解锁'+unlocked+'/4个职业技能。'+(next?'下一成长：'+next.nextLevel+'级 · '+next.name:'四个职业技能均已达三阶。');
+ list.replaceChildren();
+ skills.forEach((s,index)=>{
+  const open=!!s.rank,article=document.createElement('article'),kind={active:'主动',passive:'被动',ultimate:'终极'}[s.kind];
+  article.className='skill '+s.kind+(open?'':' locked');article.dataset.unlockLevel=String(s.unlockLevel);article.dataset.unlocked=String(open);
+  const state=open?s.stageName+(s.kind==='passive'?' · 条件触发':s.kind==='ultimate'?' · 需100怒气':''):'未解锁';
+  article.innerHTML='<div class="top"><span class="badge">'+s.unlockLevel+'级 · '+kind+'</span><span class="state">'+state+'</span></div><h3>'+s.name+'</h3><div class="stage-track">'+s.stages.map(stage=>'<span class="'+(stage.rank===s.rank?'current':'')+'">'+stage.name+' · '+stage.level+'级</span>').join('')+'</div><p class="effect">'+s.effect+'</p>'+(s.bonusText?'<p class="bonus">附加效果：'+s.bonusText+'</p>':'')+'<details class="stage-compare"><summary>三阶段详细效果</summary>'+s.stages.map(stage=>'<div><strong>'+stage.name+' · '+stage.level+'级</strong><p>'+stage.effect+'</p>'+(stage.bonusText?'<p>附加：'+stage.bonusText+'</p>':'')+'</div>').join('')+'</details><p class="resource">'+s.resource+(s.kind==='passive'?' · 自动触发，不占行动':' · 占一次行动')+'</p>';
+  article.setAttribute('aria-label','第'+(index+1)+'技能 '+s.name+' '+s.unlockLevel+'级 '+kind+' '+state);list.append(article);
+ });
+}
+levelSelect.addEventListener('change',render);render();
+</script></body></html>

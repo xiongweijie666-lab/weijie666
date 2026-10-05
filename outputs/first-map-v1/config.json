@@ -1,0 +1,23 @@
+{
+  "title":"青竹山麓","world":{"width":1536,"height":1024,"spawn":[245,825]},
+  "classes":[
+    {"id":"swordsman-luqinglan","name":"陆青岚","profession":"剑士","speed":30},
+    {"id":"saber-hanpoyue","name":"韩破岳","profession":"刀客","speed":24},
+    {"id":"assassin-xieqian","name":"谢潜","profession":"刺客","speed":34},
+    {"id":"mage-suyingyue","name":"苏映月","profession":"法师","speed":27},
+    {"id":"healer-shenzhiwei","name":"沈知微","profession":"医师","speed":26}
+  ],
+  "zones":[
+    {"id":"tuanzi","name":"团子","area":"花溪草坡","level":1,"center":[585,790],"radius":170,"speed":8},
+    {"id":"turtle","name":"乌龟","area":"碧水溪岸","level":3,"center":[425,445],"radius":105,"speed":7},
+    {"id":"wolf","name":"狼","area":"青竹幽径","level":6,"center":[710,230],"radius":125,"speed":17},
+    {"id":"boar","name":"野猪","area":"赤石山岗","level":10,"center":[1100,550],"radius":145,"speed":10},
+    {"id":"monkey","name":"猴子","area":"灵桃古林","level":15,"center":[1280,235],"radius":145,"speed":15}
+  ],
+  "roads":[[[245,825],[380,745],[585,790]],[[380,745],[430,605],[425,445]],[[425,445],[580,365],[710,230]],[[585,790],[825,765],[1035,720],[1100,550]],[[1100,550],[1030,370],[1120,315],[1280,235]],[[710,230],[965,225],[1030,370]]],
+  "rarities":{
+    "normal":{"name":"普通","color":"#e4e9dd","capture":0.45,"wildScale":1,"growth":1},
+    "baby":{"name":"宝宝","color":"#efd397","capture":0.75,"wildScale":0.8,"growth":1.12},
+    "mutant":{"name":"变异","color":"#d5b6ed","capture":0.25,"wildScale":1.3,"growth":1.25}
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "map": {
+    "width": 1536,
+    "height": 1024
+  },
+  "creatureCount": 15,
+  "uniqueCreatures": 15,
+  "creatures": [
+    {
+      "file": "tuanzi-normal.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 62771,
+      "opaquePixels": 43354,
+      "sha256": "b6a208eeab0da6b119906b97db22b968844edb30e1204c9433ef70bf61e0aa1e"
+    },
+    {
+      "file": "tuanzi-baby.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 84199,
+      "opaquePixels": 23008,
+      "sha256": "58b690f38925dc4bf95c7c6cdb8ef6a86dffd4772d6968993819478b772c22de"
+    },
+    {
+      "file": "tuanzi-mutant.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 63199,
+      "opaquePixels": 42850,
+      "sha256": "a8a8ac81c626ff04b4371d83ea6c9ad8fd3774344849a6a9079fc301c1aa688d"
+    },
+    {
+      "file": "turtle-normal.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 62716,
+      "opaquePixels": 43814,
+      "sha256": "cbafc5e1262c5c7f03b4ed9d178a9844c47bfa0f4bb2f1eacf4fcec5e4890fa7"
+    },
+    {
+      "file": "turtle-baby.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 87660,
+      "opaquePixels": 19668,
+      "sha256": "f3a648c0c7a46e482e34c1d43897570bd40a4ed1f6d4f2a51dc478cb91ce3ad7"
+    },
+    {
+      "file": "turtle-mutant.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 56951,
+      "opaquePixels": 49463,
+      "sha256": "70cd52d2a30792009680bfa42cc136d161f0b096c4cfbc21b98136aa1d651b81"
+    },
+    {
+      "file": "wolf-normal.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 74932,
+      "opaquePixels": 30434,
+      "sha256": "e042e758aa482f02ad81360b1778ea16c3fd64905e40e085dd9ce235643a8466"
+    },
+    {
+      "file": "wolf-baby.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 88230,
+      "opaquePixels": 18258,
+      "sha256": "6b53a54e0ac5744af93b67c78dcb2adece7412b36a0e945eb91f5a17d8509415"
+    },
+    {
+      "file": "wolf-mutant.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 72632,
+      "opaquePixels": 32276,
+      "sha256": "f3f5d413e78a1c50502cc49733ff1741d78c8b4ab3fa15202f5c0d243c676fbf"
+    },
+    {
+      "file": "boar-normal.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 57661,
+      "opaquePixels": 47285,
+      "sha256": "62d05a5d7caa669335b53797afcfe41377a7215232087fc10ceba7cdee4c8d7d"
+    },
+    {
+      "file": "boar-baby.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 82461,
+      "opaquePixels": 23800,
+      "sha256": "d7dc8ed0c71becdc6df25ec2efe89f69a27c2f32f9b274ea04d0574f01f219a1"
+    },
+    {
+      "file": "boar-mutant.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 59964,
+      "opaquePixels": 45089,
+      "sha256": "8357dcefc9e0015f83e027a82ed0c1283689ada74f0782fd75f4eab341484714"
+    },
+    {
+      "file": "monkey-normal.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 72201,
+      "opaquePixels": 32380,
+      "sha256": "26664c4cb9478c5df3eb509ef5bb97d31178e2afa098ffe9a32371f5a3d8b381"
+    },
+    {
+      "file": "monkey-baby.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 86207,
+      "opaquePixels": 20031,
+      "sha256": "8831cb002556787e7bb9be792d33fcb24832d8459fbbcaecc86c88a337fb72d4"
+    },
+    {
+      "file": "monkey-mutant.png",
+      "width": 320,
+      "height": 340,
+      "transparentPixels": 72907,
+      "opaquePixels": 31806,
+      "sha256": "427235b4e20fe527c997d15daa400b2ce31781564d07a0162b7f2272cc2fc9ce"
+    }
+  ],
+  "clipCount": 25,
+  "frames": 279,
+  "clips": [
+    {
+      "character": "swordsman-luqinglan",
+      "action": "idle",
+      "fps": 12,
+      "frames": 12,
+      "atlas": "atlases/swordsman-luqinglan-idle.png"
+    },
+    {
+      "character": "swordsman-luqinglan",
+      "action": "walk",
+      "fps": 12,
+      "frames": 9,
+      "atlas": "atlases/swordsman-luqinglan-walk.png"
+    },
+    {
+      "character": "swordsman-luqinglan",
+      "action": "attack",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/swordsman-luqinglan-attack.png"
+    },
+    {
+      "character": "swordsman-luqinglan",
+      "action": "cast",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/swordsman-luqinglan-cast.png"
+    },
+    {
+      "character": "swordsman-luqinglan",
+      "action": "hit",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/swordsman-luqinglan-hit.png"
+    },
+    {
+      "character": "saber-hanpoyue",
+      "action": "idle",
+      "fps": 12,
+      "frames": 9,
+      "atlas": "atlases/saber-hanpoyue-idle.png"
+    },
+    {
+      "character": "saber-hanpoyue",
+      "action": "walk",
+      "fps": 12,
+      "frames": 9,
+      "atlas": "atlases/saber-hanpoyue-walk.png"
+    },
+    {
+      "character": "saber-hanpoyue",
+      "action": "attack",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/saber-hanpoyue-attack.png"
+    },
+    {
+      "character": "saber-hanpoyue",
+      "action": "cast",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/saber-hanpoyue-cast.png"
+    },
+    {
+      "character": "saber-hanpoyue",
+      "action": "hit",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/saber-hanpoyue-hit.png"
+    },
+    {
+      "character": "assassin-xieqian",
+      "action": "idle",
+      "fps": 12,
+      "frames": 9,
+      "atlas": "atlases/assassin-xieqian-idle.png"
+    },
+    {
+      "character": "assassin-xieqian",
+      "action": "walk",
+      "fps": 12,
+      "frames": 9,
+      "atlas": "atlases/assassin-xieqian-walk.png"
+    },
+    {
+      "character": "assassin-xieqian",
+      "action": "attack",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/assassin-xieqian-attack.png"
+    },
+    {
+      "character": "assassin-xieqian",
+      "action": "cast",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/assassin-xieqian-cast.png"
+    },
+    {
+      "character": "assassin-xieqian",
+      "action": "hit",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/assassin-xieqian-hit.png"
+    },
+    {
+      "character": "mage-suyingyue",
+      "action": "idle",
+      "fps": 12,
+      "frames": 12,
+      "atlas": "atlases/mage-suyingyue-idle.png"
+    },
+    {
+      "character": "mage-suyingyue",
+      "action": "walk",
+      "fps": 12,
+      "frames": 9,
+      "atlas": "atlases/mage-suyingyue-walk.png"
+    },
+    {
+      "character": "mage-suyingyue",
+      "action": "attack",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/mage-suyingyue-attack.png"
+    },
+    {
+      "character": "mage-suyingyue",
+      "action": "cast",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/mage-suyingyue-cast.png"
+    },
+    {
+      "character": "mage-suyingyue",
+      "action": "hit",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/mage-suyingyue-hit.png"
+    },
+    {
+      "character": "healer-shenzhiwei",
+      "action": "idle",
+      "fps": 12,
+      "frames": 12,
+      "atlas": "atlases/healer-shenzhiwei-idle.png"
+    },
+    {
+      "character": "healer-shenzhiwei",
+      "action": "walk",
+      "fps": 12,
+      "frames": 9,
+      "atlas": "atlases/healer-shenzhiwei-walk.png"
+    },
+    {
+      "character": "healer-shenzhiwei",
+      "action": "attack",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/healer-shenzhiwei-attack.png"
+    },
+    {
+      "character": "healer-shenzhiwei",
+      "action": "cast",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/healer-shenzhiwei-cast.png"
+    },
+    {
+      "character": "healer-shenzhiwei",
+      "action": "hit",
+      "fps": 18,
+      "frames": 12,
+      "atlas": "atlases/healer-shenzhiwei-hit.png"
+    }
+  ]
+}

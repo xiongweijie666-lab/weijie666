@@ -1,0 +1,26 @@
+✔ five fixed encounter regions and three qualities (1.276ms)
+✔ party caps at five including real players; repeat joining is idempotent (1.3033ms)
+✔ NPC companions also count toward the five seats (0.2678ms)
+✔ solo encounter contains exactly one or two enemies (0.4378ms)
+✔ two to five heroes scale to their own count through twice that count, at most ten (0.8062ms)
+✔ a successful capture removes the enemy and persists one owned equipped pet (0.6156ms)
+✔ capture can fail and still consumes a turn without creating a pet (0.2179ms)
+✔ a captured pet participates next battle without increasing enemy scaling (0.4362ms)
+✔ foreign pets and friendly capture targets are rejected without spending a turn (0.1941ms)
+✔ skill one unlocks at character level three and rejection does not spend mana (0.4491ms)
+✔ ultimate needs both level fifteen and one hundred rage (0.2058ms)
+✔ party composition cannot change during an active shared fight (0.1871ms)
+✔ doctor healing spends mana, restores an ally and inflicts no enemy damage (0.1541ms)
+✔ mage primary target does not also receive splash damage (0.1346ms)
+✔ third-attack passive stays inactive below five and activates from five (0.4468ms)
+✔ HTTP five-member party rejects sixth member and gives at most ten enemies (162.9972ms)
+✔ HTTP simultaneous commands resolve only one action and reject unauthenticated calls (28.2485ms)
+✔ HTTP captures and equipped pets survive server restart with the same session (25.7459ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 296.2101

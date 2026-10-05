@@ -1,0 +1,13 @@
+{
+  "name": "my-cultivation-diary",
+  "version": "0.5.0",
+  "private": true,
+  "description": "国风2D回合制RPG本地浏览器原型",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node outputs/first-map-v1/server.mjs",
+    "test": "node --test outputs/first-map-v1/rules.test.mjs outputs/first-map-v1/equipment.test.mjs outputs/first-map-v1/server.test.mjs outputs/first-map-v1/systems.test.mjs outputs/first-map-v1/combat-art.test.mjs outputs/first-map-v1/skill-growth.test.mjs"
+  }
+}

@@ -1,0 +1,96 @@
+/* The five panels share navigation, while the approved equipment layout stays intact. */
+.system-dialog{width:min(1080px,96vw);max-width:none;height:min(660px,94svh);max-height:none;padding:18px;overflow:hidden}
+.system-dialog[open]{display:flex;flex-direction:column}
+.system-dialog .dialog-head{flex-shrink:0;margin-bottom:10px}
+.system-dialog .dialog-head p{font-size:11px;letter-spacing:1px;color:#82907a;margin:5px 0 0}
+.system-tabs{display:flex;gap:5px;flex-shrink:0;border-bottom:1px solid #c8d2bd;padding:0 0 10px;margin:0 0 12px}
+.system-tabs button{flex:1;max-width:130px;border-radius:6px;padding:7px 15px;font-size:12px;letter-spacing:2px;background:#edeede}
+.system-tabs button[aria-current="page"]{background:#496d50;color:#fff7df;border-color:#496d50;box-shadow:0 2px 6px #36564026}
+.tools{flex-direction:row;gap:8px;right:20px;bottom:24px}
+.tools button{display:flex;flex-direction:column;align-items:center;min-width:62px;width:66px;padding:7px 5px;color:#334f3a;border:1px solid #d9d5b7;background:linear-gradient(#fbf6e3f5,#e5e5cff5);box-shadow:0 4px 10px #1d302344;font-size:11px;gap:2px}
+.tools button i{display:grid;place-items:center;border:1px solid #9fad86;border-radius:50%;width:24px;height:24px;font:15px SimSun,serif;font-style:normal;background:#f5f1de}
+.tools button span{font-size:9px;letter-spacing:0;margin:0;color:#839074}
+.map-fullscreen{position:absolute;top:18px;right:183px;width:32px;height:32px;display:grid;place-items:center;padding:0;color:#fff4dc;background:#263d2ee0;border-color:#d4d4b65e;font-size:20px}
+.map-hint{bottom:9px}
+.hero-resources{display:block!important;color:#dce6c8!important;font-size:8px!important;font-variant-numeric:tabular-nums;white-space:nowrap}
+.battle-head-actions{display:flex;gap:8px;align-items:center;flex-shrink:0}
+.battle-menu{display:flex;gap:3px}
+.battle-menu button{padding:6px 9px;font-size:10px;border-color:#ccd4bd;background:#efefdf}
+.battle-view{position:relative}
+.effect-caption{position:absolute;left:12px;top:11px;pointer-events:none;border-left:2px solid #d7dfb6;background:#22392fca;color:#fff6db;padding:7px 12px;border-radius:0 5px 5px 0;min-width:118px}
+.effect-caption[hidden]{display:none}
+.effect-caption strong{font:17px SimSun,serif;letter-spacing:2px;display:block}
+.effect-caption span{display:block;font-size:9px;color:#d5e3c5;margin-top:3px}
+.status-tags{display:flex;flex-wrap:wrap;gap:3px;margin-top:4px}
+.status-tags span{border:1px solid #cfceb1;background:#f3e9cf;color:#857554;padding:1px 3px;border-radius:3px;font-size:8px;line-height:1.4}
+.status-tags span.good{background:#e5efdc;color:#567f58;border-color:#c6d9b7}
+.battle-result.pending-result{opacity:.65;pointer-events:none}
+.skill-layout{display:grid;grid-template-columns:minmax(230px,.68fr) minmax(0,1.32fr);gap:16px;flex:1;min-height:0}
+.skill-library,.skill-showcase{border:1px solid #cbd4bf;border-radius:10px;padding:12px;background:#faf8ee;min-width:0;overflow:auto;scrollbar-width:thin}
+.skill-library{display:flex;flex-direction:column;overflow:hidden}.skill-picker,.normal-comparison{flex-shrink:0}
+.skill-picker{margin:0 0 10px;display:flex;justify-content:space-between;color:#7c8870;font-size:10px;gap:5px}
+.skill-picker select{padding:7px 9px;width:70%;font-size:11px}
+.normal-comparison{font-size:10px;color:#77856a;line-height:1.7;padding:8px 10px;margin:0 0 10px;background:#eaf0df;border-radius:6px;border-left:2px solid #a8bb8e}
+.skill-list{display:grid;gap:7px;overflow:auto;min-height:0;align-content:start;scrollbar-width:thin;padding:1px}
+.skill-card{display:grid;grid-template-columns:37px minmax(0,1fr) auto;align-items:center;gap:8px;text-align:left;padding:10px 9px;background:linear-gradient(100deg,#f5f2e5,#faf8ef);border-color:#d2d8c5;position:relative}
+.skill-card[aria-pressed="true"]{border-color:#557854;background:#e9efd9;box-shadow:inset 3px 0 #557854}
+.skill-card.skill-locked{color:#788071}
+.skill-card .skill-emblem{width:35px;height:35px;display:grid;place-items:center;background:#465e50;border-radius:8px;color:var(--skill-color,#ecedc8);border:1px solid #81927a;font:18px SimSun,serif;text-shadow:0 0 8px var(--skill-color)}
+.skill-card.ultimate .skill-emblem{border-color:#cdb170;background:#5a5040;color:#ffe1a7}
+.skill-card strong{display:block;font:16px SimSun,serif;letter-spacing:1px;color:#365a42;white-space:nowrap}
+.skill-card small{display:block;font-size:9px;line-height:1.5;color:#849076;margin-top:4px}
+.skill-card>span:last-child{font-size:9px;white-space:nowrap;color:#859173;align-self:start}
+.skill-card.ultimate>span:last-child{color:#a0834b}
+.skill-card .skill-brief{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:210px}
+.skill-showcase{display:flex;flex-direction:column;gap:10px}
+.showcase-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-shrink:0}
+.showcase-head small{font-size:9px;letter-spacing:2px;color:#839174}
+.showcase-head h3{font-size:22px;color:#3e6046;margin:4px 0 0}
+.showcase-badge{font:11px SimSun,serif;color:#a08a5b;border:1px solid #d4c69f;padding:5px 7px;white-space:nowrap;border-radius:4px}
+.skill-preview-stage{position:relative;flex:1;min-height:190px;border-radius:8px;overflow:hidden;border:1px solid #a7b399;background:#c9d5c0}
+#skill-preview{display:block;width:100%;height:100%;min-height:190px}
+.preview-caption{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:#234034cf;color:#fff5da;padding:4px 12px;border:1px solid #dddfbc55;border-radius:20px;font-size:9px;white-space:nowrap;pointer-events:none}
+.preview-timeline{display:flex;align-items:center;gap:7px;flex-shrink:0}
+.preview-timeline button{font-size:10px;padding:6px 10px;white-space:nowrap}
+.preview-timeline input{padding:0;height:18px;flex:1;min-width:60px;accent-color:#607e54;margin:0;cursor:pointer;border:0;background:none}
+.skill-detail{font-size:11px;line-height:1.75;color:#6c7b61;flex-shrink:0}
+.skill-detail p{margin:0 0 4px}.skill-detail .skill-resource{color:#9a845b;font-size:10px;margin-bottom:6px}
+.skill-detail .skill-number{color:#3d704e;font-weight:600}
+.skill-stages{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-bottom:7px}
+.skill-stages>span{padding:5px 7px;background:#eeeee4;border:1px solid #dedfd1;border-radius:5px;color:#8b927e}.skill-stages strong,.skill-stages small{display:block}.skill-stages strong{font-size:11px}.skill-stages small{font-size:9px}
+.skill-stages .current{background:#e1ecd8;border-color:#6f8f65;color:#3e6849}.skill-stages .achieved{background:#eaf0df;color:#637c55}.skill-card .skill-next{color:#698b5f;font-size:9px;margin-top:2px}
+.skill-bonus{padding:5px 7px;background:#eef0dc;border-left:2px solid #b5b177;color:#73805f}.skill-bonus b{color:#7d743e}.skill-growth-next{font-size:9px;color:#83956c}
+.skill-stage-comparison{font-size:10px;color:#798568}.skill-stage-comparison summary{cursor:pointer;padding:4px 0;color:#4d7353}.skill-stage-comparison>div{padding:6px 0;border-top:1px solid #dce1d0}.skill-stage-comparison strong{color:#4d7353}
+.skill-cast-row{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.skill-cast-row button{padding:7px 15px;white-space:nowrap;font-size:11px}
+.skill-cast-row span,.preview-note{font-size:9px;color:#849077;line-height:1.6}
+.preview-note{display:block;flex-shrink:0}
+.formation-preview .battle-menu,.formation-preview .map-fullscreen,.formation-preview .effect-caption{display:none}
+.panel-toast{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);z-index:5;border:1px solid #d9d4b586;background:#23382eeb;color:#fff7db;padding:9px 18px;margin:0;border-radius:7px;font-size:11px;max-width:80%;line-height:1.6;pointer-events:none;box-shadow:0 4px 16px #12231526}
+@media(max-width:980px) and (orientation:landscape){
+ .system-dialog{padding:10px;width:calc(100vw - 24px);height:calc(100svh - 20px)}
+ .system-dialog .dialog-head{margin-bottom:6px}.system-dialog .dialog-head h2{font-size:19px}.system-dialog .dialog-head p{font-size:9px;margin-top:3px}.system-dialog .dialog-head button{font-size:17px}
+ .system-tabs{padding-bottom:6px;margin-bottom:8px;gap:4px}.system-tabs button{padding:5px 9px;font-size:10px}
+ .tools{right:12px;bottom:17px;gap:5px}.tools button{min-width:51px;width:53px;font-size:10px;padding:5px 3px}.tools button i{width:20px;height:20px;font-size:13px}.tools button span{font-size:8px}
+ .map-fullscreen{top:10px;right:117px;width:27px;height:27px;font-size:18px}
+ .battle-head-actions{gap:5px}.battle-menu{gap:2px}.battle-menu button{font-size:9px;padding:5px 6px}
+ .battle-head p{font-size:9px}.battle-head h2{font-size:16px}.battle-head-actions #retreat{font-size:9px;padding:5px 8px}
+ .effect-caption{top:7px;left:7px;padding:4px 8px;min-width:90px}.effect-caption strong{font-size:13px}.effect-caption span{font-size:8px}
+ .skill-layout{grid-template-columns:minmax(190px,.63fr) minmax(0,1.37fr);gap:9px}
+ .skill-library,.skill-showcase{padding:8px}.skill-showcase{gap:6px}.skill-picker{margin-bottom:6px;font-size:9px}.skill-picker select{padding:5px;font-size:10px}
+ .normal-comparison{font-size:9px;padding:5px 7px;margin-bottom:6px}.skill-list{gap:5px}.skill-card{padding:5px 6px;grid-template-columns:25px minmax(0,1fr) auto;gap:6px}.skill-card .skill-emblem{width:24px;height:24px;font-size:14px}.skill-card strong{font-size:13px}.skill-card small,.skill-card>span:last-child{font-size:8px}.skill-card small{margin-top:2px}.skill-card .skill-brief{max-width:170px}
+ .showcase-head h3{font-size:18px}.showcase-head small{font-size:8px}.showcase-badge{font-size:9px;padding:3px 5px}
+ .skill-preview-stage{min-height:112px;flex:none;height:clamp(112px,30svh,190px)}#skill-preview{min-height:112px}
+ .preview-caption{bottom:5px;padding:2px 8px;font-size:8px}.preview-timeline{gap:5px}.preview-timeline button{padding:4px 7px;font-size:9px}
+ .skill-detail{font-size:10px;line-height:1.55}.skill-detail p{margin-bottom:3px}.skill-detail .skill-resource{font-size:9px;margin-bottom:3px}
+ .skill-cast-row button{padding:5px 10px;font-size:10px}.skill-cast-row span,.preview-note{font-size:8px}
+ .skill-showcase{gap:4px}.preview-note{display:none}
+ #bag-dialog .sys-bag-detail{position:relative}
+ #bag-dialog .sys-bag-detail-art{position:absolute;top:8px;left:8px;width:38px;height:38px}
+ #bag-dialog .sys-bag-detail-art :is(.gear-icon,.sys-item-icon){width:26px;height:26px}
+ #bag-dialog .sys-bag-detail-art>span{display:none}
+ #bag-dialog .sys-bag-detail h3,#bag-dialog .sys-detail-caption{padding-left:45px;text-align:left}
+ .equipment-layout{gap:8px}.equipment-quality-legend{margin-top:5px}.worn-stage{min-height:120px}
+ .equipment-stats{margin:4px 0}.equipment-stats>div{padding:3px 5px}.equipment-stats strong{line-height:14px}.equipment-stats small{display:none}
+ #equipment-auto{padding:5px}.equipment-character .equipment-note{line-height:1.4;margin-top:4px}
+}

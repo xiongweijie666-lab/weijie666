@@ -1,0 +1,29 @@
+{
+  "checkedAtUtc": "2026-10-05T06:42:11Z",
+  "scope": "六部位装备穿戴、属性加成、战斗掉落和存档迁移",
+  "automated": {
+    "passed": 43,
+    "failed": 0,
+    "equipmentRules": 15,
+    "existingGameRules": 22,
+    "http": 6,
+    "syntax": ["rules.mjs", "server.mjs", "game.js"],
+    "evidence": "装备自动测试结果-20261005.txt",
+    "coverage": ["五职业六部位逐件穿戴", "重复穿戴与替换不叠加", "外人物与伪造物品拒绝", "职业和等级限制", "一键穿戴选择可用最佳物品", "战斗及结果页禁用换装", "真实伤害、治疗、气血、法力与速度属性", "每个队员独立获得掉落", "重复结算不重复发奖", "捕获与失败不掉装备", "随机无掉落与金色品质", "装备存档恢复与旧存档只补发一次", "装备HTTP鉴权与重启恢复"]
+  },
+  "browser": {
+    "engine": "Codex in-app browser",
+    "desktopViewport": [1280, 720],
+    "landscapeViewport": [844, 390],
+    "freshConsoleErrors": 0,
+    "checks": ["穿戴木剑后攻击30变34，卸下恢复30", "六件穿戴后气血192、法力112、防御11、速度32", "刷新后保留装备与属性", "切换医师后剑士武器自动卸下，旧装备保留", "医师可穿戴药葫芦", "真实五人随机遭遇7只团子并获胜", "胜利获得良品布巾与上品平安符，显示已入个人行囊", "结果页可查看物品，穿戴和一键穿戴均禁用", "新手饰品法力112，替换上品饰品后117，卸下后100，旧饰品保留", "手机横屏三面板和六个部位无内容溢出", "独立测试页检查完毕后关闭，保留用户正在试玩的标签页"],
+    "screenshots": ["outputs/青竹山麓-装备行囊-20261005.jpg", "outputs/青竹山麓-手机横屏装备-20261005.jpg", "outputs/青竹山麓-医师装备-20261005.jpg", "outputs/青竹山麓-装备战利品-20261005.jpg"]
+  },
+  "localPreview": {
+    "url": "http://127.0.0.1:4177/first-map-v1/index.html",
+    "httpStatus": 200,
+    "stateBackupCreatedBeforeMigration": true
+  },
+  "limits": ["已验证浏览器横屏尺寸，实体手机与微信小程序运行尚未验证", "本轮未制作强化、交易、装备制作或立绘换装", "进行中的队伍和战斗不跨服务重启保存，角色、宠物及装备可恢复"],
+  "artPreservation": "原有地图、怪物、五职业立绘和人物动画PNG由试玩包校验逐字节比较；结果见outputs/first-map-v3-package-check.json"
+}

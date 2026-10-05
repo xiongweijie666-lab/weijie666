@@ -1,0 +1,353 @@
+/* 系统面板沿用纸色与竹青；所有规则限定于各自的 dialog。 */
+:is(#team-dialog,#pets-dialog,#bag-dialog){width:min(1040px,calc(100vw - 24px));max-width:none;height:min(640px,calc(100svh - 20px));max-height:calc(100svh - 20px);padding:18px;overflow:hidden}
+:is(#team-dialog,#pets-dialog,#bag-dialog)[open]{display:flex;flex-direction:column}
+:is(#team-dialog,#pets-dialog,#bag-dialog)>.dialog-head{flex-shrink:0;margin-bottom:12px}
+:is(#team-dialog,#pets-dialog,#bag-dialog)>.dialog-note{flex-shrink:0;font-size:11px;line-height:1.5;margin:0 0 10px}
+:is(#team-content,#pet-list,#bag-content){flex:1;min-width:0;min-height:0;overflow:auto}
+:is(#team-dialog,#pets-dialog,#bag-dialog) .sys-shell{height:100%;min-height:0;display:flex;flex-direction:column;gap:12px}
+:is(#team-dialog,#pets-dialog,#bag-dialog) :is(.sys-note,.sys-state-note){font-size:11px;line-height:1.65;color:#77816e;margin:0}
+:is(#team-dialog,#pets-dialog,#bag-dialog) .sys-state-note{padding:8px 10px;border-radius:6px;background:#e9eddf}
+:is(#team-dialog,#pets-dialog,#bag-dialog) .sys-eyebrow{display:block;color:#829075;font-size:10px;letter-spacing:2px;margin-bottom:5px}
+:is(#team-dialog,#pets-dialog,#bag-dialog) .sys-badge{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d3dac7;border-radius:4px;padding:3px 6px;background:#eef0e4;font-size:10px;line-height:1;color:#728167;white-space:nowrap}
+:is(#team-dialog,#pets-dialog,#bag-dialog) .sys-badge-leader{border-color:#d6c596;background:#eee4c9;color:#8f753f}
+:is(#team-dialog,#pets-dialog,#bag-dialog) .sys-empty-seal{display:grid;place-items:center;width:64px;height:64px;border:1px solid #cbd4bf;border-radius:50%;font:28px "SimSun",serif;color:#a2ae91;background:#eff1e4}
+:is(#team-dialog,#pets-dialog,#bag-dialog) button:focus-visible{outline:2px solid #af8a52;outline-offset:2px}
+:is(#team-dialog,#pets-dialog,#bag-dialog) button[aria-pressed="true"]{outline:2px solid #57764e;outline-offset:0;background:#e8eddb}
+:is(#team-dialog,#pets-dialog,#bag-dialog) .sys-equipped-mark{position:absolute;top:0;left:0;z-index:1;padding:3px 6px;border-radius:6px 0 5px 0;background:#58794f;color:#fff8df;font-size:9px;line-height:1.2}
+
+#team-dialog .sys-team-scroll,#team-dialog .sys-team-start{overflow:auto;scrollbar-width:thin;padding:1px 3px 3px}
+#team-dialog .sys-team-scroll>*{flex-shrink:0}
+#team-dialog .sys-solo-intro{display:flex;align-items:center;justify-content:center;gap:26px;padding:14px;background:radial-gradient(ellipse,#e3e9d6,transparent 75%);border-radius:10px}
+#team-dialog .sys-solo-intro img{width:104px;height:155px;object-fit:contain}
+#team-dialog .sys-solo-intro h3{font-size:25px;letter-spacing:2px}
+#team-dialog .sys-solo-intro p{font-size:12px;color:#77846d;line-height:1.8;max-width:330px;margin:12px 0 0}
+#team-dialog .sys-team-entry{display:grid;grid-template-columns:1fr 1.2fr;gap:14px}
+#team-dialog .sys-entry-card{padding:18px;border:1px solid #cbd5bf;background:#faf8ee;border-radius:10px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:0}
+#team-dialog .sys-entry-card h4{font:20px "SimSun",serif;letter-spacing:2px;margin:0}
+#team-dialog .sys-entry-card>p{font-size:11px;line-height:1.7;color:#7c8671;margin:0}
+#team-dialog .sys-entry-card>button{margin-top:auto;min-width:150px}
+#team-dialog .sys-form-label{font-size:10px;color:#87917a;margin:0}
+#team-dialog .sys-inline-form{width:100%;display:flex;gap:8px;align-items:center}
+#team-dialog .sys-inline-form input{flex:1;min-width:0;width:160px;text-transform:uppercase;letter-spacing:3px;font:16px ui-monospace,monospace}
+#team-dialog .sys-inline-form button{margin:0;white-space:nowrap;min-height:40px}
+#team-dialog .sys-room-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;border:1px solid #c9d3bd;border-radius:9px;background:#e6ecdc}
+#team-dialog .sys-room-bar>div:first-child{display:flex;align-items:center;gap:14px}
+#team-dialog .sys-room-bar small{font-size:10px;color:#7d8b70}
+#team-dialog .sys-room-bar code{font-size:24px;letter-spacing:4px;color:#496e4e;user-select:all}
+#team-dialog .sys-room-actions{display:flex;align-items:center;gap:12px;font-size:11px;white-space:nowrap}
+#team-dialog .sys-room-actions>span{color:#7b886c}
+#team-dialog .sys-room-actions button{padding:6px 10px;font-size:10px}
+#team-dialog .sys-team-summary{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;color:#7d886e}
+#team-dialog .sys-team-summary p{margin:0;line-height:1.5}
+#team-dialog .sys-team-summary p strong{color:#4c704d;font-weight:600;font-size:13px;margin-left:4px}
+#team-dialog .sys-team-summary p span{margin-left:12px;font-size:10px}
+#team-dialog .sys-ready-summary{white-space:nowrap;padding:5px 8px;border-radius:5px;background:#edeadf;color:#8e8268}
+#team-dialog .sys-ready-summary.is-ready{color:#597745;background:#e0e9d5}
+#team-dialog .sys-team-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;align-items:stretch}
+#team-dialog .sys-team-seat{position:relative;min-width:0;display:flex;flex-direction:column;align-items:center;border:1px solid #d0d8c4;border-radius:9px;background:linear-gradient(#fbf9f0,#f2f2e4);padding:10px 7px;gap:7px;text-align:center;overflow-wrap:anywhere}
+#team-dialog .sys-seat-self{border-color:#799668;box-shadow:inset 0 0 0 1px #e0e8d6}
+#team-dialog .sys-seat-number{width:100%;font-size:9px;letter-spacing:1px;color:#9a9f89;text-align:left}
+#team-dialog .sys-member-art{width:80px;height:100px;object-fit:contain;display:block;background:radial-gradient(ellipse,#dfe7d1,transparent 70%)}
+#team-dialog .sys-team-seat h4{font:19px "SimSun",serif;letter-spacing:1px;margin:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#team-dialog .sys-member-class{font-size:10px;color:#849075;margin:0}
+#team-dialog .sys-member-badges{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;min-height:19px}
+#team-dialog .sys-connection{font-size:9px;color:#7f906c;margin:0;display:flex;align-items:center;gap:4px;line-height:1.5}
+#team-dialog .sys-connection i{width:4px;height:4px;border-radius:50%;background:#83a16b;flex-shrink:0}
+#team-dialog .sys-connection-offline{color:#9b8b6c}
+#team-dialog .sys-connection-offline i{background:#b7a586}
+#team-dialog .sys-ready-state{font-size:11px;font-weight:500;letter-spacing:1px;color:#9c9276}
+#team-dialog .sys-ready-state.is-ready{color:#547946}
+#team-dialog .sys-member-pet{font-size:9px;color:#8b937b;line-height:1.5;max-width:100%}
+#team-dialog .sys-member-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;margin-top:auto;width:100%;padding-top:2px}
+#team-dialog .sys-member-actions button{padding:5px 6px;font-size:9px;border-radius:5px;min-height:28px}
+#team-dialog .sys-seat-empty{border-style:dashed;background:#f4f4e9;justify-content:center;gap:13px;min-height:210px}
+#team-dialog .sys-seat-empty .sys-seat-number{position:absolute;top:10px;left:8px;width:auto}
+#team-dialog .sys-seat-empty strong{font:17px "SimSun",serif;color:#a0aa92;letter-spacing:2px}
+#team-dialog .sys-seat-empty small{font-size:10px;color:#a5ad97}
+#team-dialog .sys-team-manage{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+#team-dialog .sys-own-ready{display:flex;align-items:center;gap:8px;margin-right:auto;min-width:0}
+#team-dialog .sys-own-ready>span{font-size:10px;color:#7d876f;line-height:1.6;max-width:140px}
+#team-dialog .sys-own-ready>button{white-space:nowrap}
+#team-dialog .sys-companion-form{display:flex;gap:6px;align-items:center}
+#team-dialog .sys-companion-form select{width:160px;font-size:11px;padding:8px;min-width:0}
+#team-dialog .sys-companion-form button{white-space:nowrap}
+#team-dialog .sys-quiet-danger{color:#967961;border-color:#ddcfbc;white-space:nowrap}
+
+#pets-dialog .sys-pets-layout{height:100%;min-height:0;display:grid;grid-template-columns:minmax(210px,.75fr) minmax(0,1.7fr);gap:14px}
+#pets-dialog .sys-pet-archive{min-height:0;min-width:0;display:flex;flex-direction:column;gap:10px}
+#pets-dialog .sys-section-head{display:flex;justify-content:space-between;align-items:center;gap:5px}
+#pets-dialog .sys-section-head h3{font-size:18px;letter-spacing:1px}
+#pets-dialog .sys-section-head>span{font-size:10px;color:#859078;white-space:nowrap}
+#pets-dialog .sys-pet-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;align-content:start;flex:1;min-height:0;overflow:auto;padding:2px;scrollbar-width:thin}
+#pets-dialog .sys-pet-card{position:relative;min-width:0;display:flex;flex-direction:column;align-items:center;gap:5px;padding:12px 5px 8px;border-color:#c7d2bc;background:#f9f7ed;min-height:144px}
+#pets-dialog .sys-pet-card img{width:83px;height:83px;max-width:100%;object-fit:contain}
+#pets-dialog .sys-pet-card strong{font-size:12px;font-weight:500;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#5d7652}
+#pets-dialog .sys-pet-card small{font-size:10px;color:#879375;line-height:1.5}
+#pets-dialog .sys-pet-card.baby{border-color:#d5bb8b}
+#pets-dialog .sys-pet-card.baby strong{color:#947138}
+#pets-dialog .sys-pet-card.mutant{border-color:#bfa2cc}
+#pets-dialog .sys-pet-card.mutant strong{color:#88639c}
+#pets-dialog .sys-pet-detail{min-width:0;min-height:0;overflow:auto;scrollbar-width:thin;background:#faf8ee;border:1px solid #ccd5be;border-radius:10px;padding:15px;color:#5f7257}
+#pets-dialog .sys-pet-title{display:flex;align-items:center;justify-content:space-between;gap:9px;margin-bottom:10px}
+#pets-dialog .sys-pet-title h3{font-size:25px;letter-spacing:1px;overflow-wrap:anywhere}
+#pets-dialog .sys-pet-detail.baby .sys-pet-title h3{color:#96733c}
+#pets-dialog .sys-pet-detail.mutant .sys-pet-title h3{color:#866294}
+#pets-dialog .sys-pet-body{display:grid;grid-template-columns:minmax(130px,.85fr) minmax(0,1fr);gap:13px;align-items:center}
+#pets-dialog .sys-pet-stage{position:relative;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:225px;padding:10px 0}
+#pets-dialog .sys-pet-ring{position:absolute;width:90%;aspect-ratio:1;border:1px solid #d9decc;border-radius:50%;background:radial-gradient(circle,#e1e8d6,#f9f6e940 68%);box-shadow:inset 0 0 0 8px #f6f4e8}
+#pets-dialog .sys-pet-stage img{position:relative;z-index:1;display:block;width:100%;max-width:235px;height:215px;object-fit:contain}
+#pets-dialog .sys-pet-stage>span{position:relative;z-index:1;font-size:10px;color:#889279;letter-spacing:1px;white-space:nowrap;margin-top:6px}
+#pets-dialog .sys-pet-info{display:flex;flex-direction:column;gap:10px;min-width:0}
+#pets-dialog .sys-pet-xp>div{display:flex;justify-content:space-between;gap:6px;font-size:10px;color:#87937a}
+#pets-dialog .sys-pet-xp strong{font-size:10px;font-weight:500;color:#708561;font-variant-numeric:tabular-nums}
+#pets-dialog .sys-xp-track{display:block;height:5px;background:#e2e7d5;border-radius:4px;overflow:hidden;margin-top:6px}
+#pets-dialog .sys-xp-track i{display:block;height:100%;background:#9aaf78;border-radius:4px}
+#pets-dialog .sys-pet-stats{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0}
+#pets-dialog .sys-pet-stats>div{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 10px;background:#eaf0df;border-radius:6px}
+#pets-dialog .sys-pet-stats dt{font-size:10px;color:#80906f}
+#pets-dialog .sys-pet-stats dd{font-size:20px;color:#4f7048;margin:0;font-variant-numeric:tabular-nums}
+#pets-dialog .sys-pet-ability{padding:10px;border:1px solid #d4dcc6;border-radius:7px;background:#f3f2e5}
+#pets-dialog .sys-pet-ability>div{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px}
+#pets-dialog .sys-pet-ability strong{font-size:12px;letter-spacing:1px;font-weight:500;color:#5b784f}
+#pets-dialog .sys-pet-ability span{font-size:9px;color:#8c967c;white-space:nowrap}
+#pets-dialog .sys-pet-ability p{font-size:10px;line-height:1.65;color:#7c886e;margin:7px 0 0}
+#pets-dialog .sys-pet-actions{display:flex;align-items:center;gap:12px;margin:14px 0 12px}
+#pets-dialog .sys-pet-actions button{min-width:136px;white-space:nowrap}
+#pets-dialog .sys-pet-actions span{font-size:10px;color:#899378;line-height:1.6}
+#pets-dialog .sys-rename-form{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:7px;align-items:center;border-top:1px solid #dce1d0;padding-top:12px;margin:0}
+#pets-dialog .sys-rename-form label{margin:0;font-size:11px;color:#7b886d;white-space:nowrap}
+#pets-dialog .sys-rename-form input{min-width:0;width:100%;font-size:12px;padding:8px}
+#pets-dialog .sys-rename-form button{margin:0;white-space:nowrap;padding:8px 10px}
+#pets-dialog .sys-rename-form p{grid-column:2/-1;font-size:10px}
+#pets-dialog .sys-pet-footnote{font-size:9px;letter-spacing:1px;color:#98a088;text-align:center;margin:12px 0 0}
+#pets-dialog .sys-pet-empty{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:17px;text-align:center;border:1px dashed #cbd6be;border-radius:10px;padding:20px;background:radial-gradient(ellipse,#eaf0df,transparent 70%)}
+#pets-dialog .sys-pet-empty h3{font-size:25px;color:#607d53;letter-spacing:2px}
+#pets-dialog .sys-pet-empty p{font-size:13px;line-height:1.8;color:#7d8b70;margin:0}
+#pets-dialog .sys-pet-empty small{font-size:11px;line-height:1.8;color:#9a9f85}
+
+#bag-dialog .sys-bag-summary{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1px solid #cbd5be;border-radius:8px;background:#e7eddd;padding:10px 12px}
+#bag-dialog .sys-bag-summary>div:first-child{display:flex;flex-direction:column;gap:6px;min-width:0}
+#bag-dialog .sys-bag-summary>div:first-child strong{font-size:12px;font-weight:500;color:#58784d}
+#bag-dialog .sys-bag-summary>div:first-child span{font-size:10px;color:#869075}
+#bag-dialog .sys-vitals{display:flex;align-items:center;gap:16px}
+#bag-dialog .sys-resource{width:143px;min-width:0}
+#bag-dialog .sys-resource>div{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:10px;color:#738367}
+#bag-dialog .sys-resource strong{font-weight:500;font-size:10px;font-variant-numeric:tabular-nums;white-space:nowrap}
+#bag-dialog .sys-resource-track{display:block;height:5px;background:#d3ddc8;border-radius:3px;overflow:hidden;margin-top:6px}
+#bag-dialog .sys-resource-track i{display:block;height:100%;background:#88a16c}
+#bag-dialog .sys-mp .sys-resource-track i{background:#81a2a8}
+#bag-dialog .sys-bag-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:14px;flex:1;min-height:0}
+#bag-dialog .sys-bag-inventory{display:flex;flex-direction:column;min-height:0;min-width:0;gap:10px}
+#bag-dialog .sys-bag-filters{display:flex;gap:7px;flex-shrink:0}
+#bag-dialog .sys-bag-filters button{font-size:11px;padding:7px 16px}
+#bag-dialog .sys-bag-filters button[aria-pressed="true"]{background:#52744c;border-color:#52744c;outline:none;color:#fff8e1}
+#bag-dialog .sys-bag-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;align-content:start;flex:1;min-height:0;overflow:auto;padding:2px;scrollbar-width:thin}
+#bag-dialog .sys-bag-cell{position:relative;min-width:0;min-height:125px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:15px 4px 8px;gap:5px;border-color:var(--item-quality);background:#faf7ed;border-radius:8px}
+#bag-dialog .sys-bag-cell :is(.gear-icon,.sys-item-icon){width:57px;height:57px;display:block;flex-shrink:0}
+#bag-dialog .sys-bag-cell strong{color:var(--item-quality);font-size:11px;font-weight:500;overflow-wrap:anywhere;line-height:1.4}
+#bag-dialog .sys-bag-cell small{font-size:9px;color:#8c977d;line-height:1.4;white-space:nowrap}
+#bag-dialog .sys-item-count{position:absolute;right:6px;top:5px;border-radius:4px;padding:2px 4px;font-size:10px;font-variant-numeric:tabular-nums;background:#efeadb;color:#7a806b}
+#bag-dialog .sys-item-depleted{background:#eeeee5;border-color:#c7cabb}
+#bag-dialog .sys-item-depleted :is(.sys-item-icon,strong){opacity:.48}
+#bag-dialog .sys-item-depleted .sys-item-count{color:#a3a38e}
+#bag-dialog .sys-bag-detail{min-width:0;min-height:0;overflow:auto;scrollbar-width:thin;border:1px solid #ccd6be;border-radius:10px;background:#faf8ee;padding:14px}
+#bag-dialog .sys-bag-detail-art{width:104px;height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;margin:0 auto 10px;border:1px solid var(--item-quality,#bccbb2);border-radius:10px;background:radial-gradient(circle,#e7e6d4,#f7f4e9)}
+#bag-dialog .sys-bag-detail-art :is(.gear-icon,.sys-item-icon){width:73px;height:73px;display:block}
+#bag-dialog .sys-bag-detail-art>span{font-size:9px;letter-spacing:2px;color:var(--item-quality,#899375)}
+#bag-dialog .sys-bag-detail h3{font-size:24px;letter-spacing:1px;text-align:center;overflow-wrap:anywhere;color:#62764f;margin:0 0 7px}
+#bag-dialog .sys-detail-caption{font-size:10px;color:#849176;line-height:1.7;text-align:center;margin:0 0 12px}
+#bag-dialog .sys-item-stats{margin:0 0 10px;border-block:1px solid #d6deca;padding:8px 0;display:flex;flex-direction:column;gap:8px}
+#bag-dialog .sys-item-stats>div{display:flex;justify-content:space-between;align-items:center;gap:8px}
+#bag-dialog .sys-item-stats dt{font-size:11px;color:#7d8c6b}
+#bag-dialog .sys-item-stats dd{font-size:21px;color:#57784a;margin:0;font-variant-numeric:tabular-nums}
+#bag-dialog .sys-item-description{font-size:11px;line-height:1.75;color:#7d8a6d;margin:10px 0}
+#bag-dialog .sys-bag-detail .sys-state-note{font-size:11px;margin:10px 0}
+#bag-dialog .sys-wide-button{width:100%;margin:5px 0 8px;min-height:36px}
+#bag-dialog .sys-medicine-target{display:flex;align-items:flex-start;flex-direction:column;gap:6px;font-size:10px;color:#819074;margin:12px 0 9px}
+#bag-dialog .sys-medicine-target select{width:100%;padding:8px;font-size:11px;min-width:0}
+#bag-dialog .sys-medicine-preview{display:flex;align-items:center;justify-content:space-between;padding:10px;background:#edf0e2;border-radius:6px;margin:12px 0;font-size:11px;color:#879176}
+#bag-dialog .sys-medicine-preview strong{font-weight:500;font-size:13px;color:#5d794f}
+#bag-dialog .sys-inn-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #d2dcc5;padding-top:10px;flex-shrink:0}
+#bag-dialog .sys-inn-footer>div{display:flex;gap:12px;align-items:center;min-width:0}
+#bag-dialog .sys-inn-footer strong{font-size:11px;font-weight:500;color:#5f7d50;white-space:nowrap}
+#bag-dialog .sys-inn-footer span{font-size:10px;color:#8d977d}
+#bag-dialog .sys-inn-footer button{padding:7px 23px;white-space:nowrap}
+#bag-dialog .sys-bag-empty{grid-column:1/-1;border:1px dashed #cbd4bf;padding:30px 10px;font-size:12px;line-height:1.8;text-align:center;color:#89977b;border-radius:8px;margin:0}
+#bag-dialog .sys-detail-empty{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:15px}
+#bag-dialog .sys-detail-empty p{font-size:12px;color:#879777;line-height:1.8;text-align:center}
+
+@media(max-width:980px){
+ :is(#team-dialog,#pets-dialog,#bag-dialog){padding:14px}
+ #team-dialog .sys-room-actions{gap:8px}
+ #team-dialog .sys-room-bar{padding:8px 10px}
+ #team-dialog .sys-team-grid{gap:7px}
+ #team-dialog .sys-team-seat{gap:6px;padding:8px 5px}
+ #team-dialog .sys-member-art{height:83px;width:68px}
+ #team-dialog .sys-team-seat h4{font-size:17px}
+ #team-dialog .sys-team-manage{gap:7px}
+ #team-dialog .sys-own-ready>span{max-width:112px}
+ #team-dialog .sys-companion-form select{width:143px;font-size:10px}
+ #team-dialog .sys-team-manage button{font-size:11px;padding:8px 10px}
+ #pets-dialog .sys-pets-layout{grid-template-columns:minmax(210px,.8fr) minmax(0,1.6fr);gap:10px}
+ #pets-dialog .sys-pet-detail{padding:12px}
+ #pets-dialog .sys-pet-body{gap:10px;grid-template-columns:minmax(126px,.85fr) minmax(0,1fr)}
+ #pets-dialog .sys-section-head h3{font-size:17px}
+ #pets-dialog .sys-pet-title h3{font-size:23px}
+ #bag-dialog .sys-bag-layout{gap:10px}
+ #bag-dialog .sys-bag-grid{gap:7px}
+ #bag-dialog .sys-bag-detail{padding:11px}
+ #bag-dialog .sys-bag-cell{min-height:113px}
+}
+
+@media(orientation:landscape) and (max-height:560px){
+ :is(#team-dialog,#pets-dialog,#bag-dialog){width:calc(100vw - 20px);height:calc(100svh - 20px);max-height:calc(100svh - 20px);padding:10px;border-radius:10px}
+ :is(#team-dialog,#pets-dialog,#bag-dialog)>.dialog-head{margin-bottom:7px}
+ :is(#team-dialog,#pets-dialog,#bag-dialog)>.dialog-head h2{font-size:19px}
+ :is(#team-dialog,#pets-dialog,#bag-dialog)>.dialog-note{font-size:9px;margin-bottom:5px}
+ :is(#team-dialog,#pets-dialog,#bag-dialog) .sys-shell{gap:7px}
+ :is(#team-dialog,#pets-dialog,#bag-dialog) :is(.sys-note,.sys-state-note){font-size:9px;line-height:1.5}
+ :is(#team-dialog,#pets-dialog,#bag-dialog) .sys-state-note{padding:6px 8px}
+ :is(#team-dialog,#pets-dialog,#bag-dialog) .sys-eyebrow{font-size:8px;margin-bottom:3px}
+ :is(#team-dialog,#pets-dialog,#bag-dialog) .sys-badge{font-size:8px;padding:3px 5px}
+ :is(#team-dialog,#pets-dialog,#bag-dialog) .sys-equipped-mark{font-size:8px;padding:3px 5px}
+ #team-dialog .sys-solo-intro{padding:4px;gap:18px}
+ #team-dialog .sys-solo-intro img{width:74px;height:105px}
+ #team-dialog .sys-solo-intro h3{font-size:21px}
+ #team-dialog .sys-solo-intro p{font-size:10px;margin-top:6px}
+ #team-dialog .sys-team-entry{gap:8px}
+ #team-dialog .sys-entry-card{padding:10px;gap:7px}
+ #team-dialog .sys-entry-card h4{font-size:17px}
+ #team-dialog .sys-entry-card>p{font-size:9px}
+ #team-dialog .sys-entry-card>button{min-width:125px;padding:7px 12px}
+ #team-dialog .sys-inline-form input{padding:8px;font-size:13px}
+ #team-dialog .sys-inline-form button{font-size:11px;padding:8px 10px;min-height:33px}
+ #team-dialog .sys-room-bar{padding:5px 9px;gap:6px}
+ #team-dialog .sys-room-bar>div:first-child{gap:10px}
+ #team-dialog .sys-room-bar code{font-size:19px;letter-spacing:3px}
+ #team-dialog .sys-room-bar small{font-size:9px}
+ #team-dialog .sys-room-actions{font-size:9px;gap:8px}
+ #team-dialog .sys-room-actions button{padding:5px 8px;font-size:9px;min-height:28px}
+ #team-dialog .sys-team-summary{font-size:9px}
+ #team-dialog .sys-team-summary p strong{font-size:11px}
+ #team-dialog .sys-team-summary p span{font-size:9px;margin-left:9px}
+ #team-dialog .sys-ready-summary{padding:3px 6px;font-size:9px}
+ #team-dialog .sys-team-grid{gap:6px}
+ #team-dialog .sys-team-seat{padding:5px 5px 6px;gap:4px}
+ #team-dialog .sys-seat-number{font-size:8px}
+ #team-dialog .sys-member-art{width:43px;height:47px}
+ #team-dialog .sys-team-seat h4{font-size:15px}
+ #team-dialog .sys-member-class{font-size:9px}
+ #team-dialog .sys-member-badges{min-height:15px}
+ #team-dialog .sys-connection{font-size:8px}
+ #team-dialog .sys-ready-state{font-size:9px}
+ #team-dialog .sys-member-pet{font-size:8px}
+ #team-dialog .sys-member-actions{gap:3px}
+ #team-dialog .sys-member-actions button{padding:4px 6px;font-size:9px;min-height:27px}
+ #team-dialog .sys-seat-empty{min-height:166px;gap:9px}
+ #team-dialog .sys-seat-empty .sys-seat-number{top:5px;left:5px}
+ #team-dialog .sys-seat-empty .sys-empty-seal{width:42px;height:42px;font-size:21px}
+ #team-dialog .sys-seat-empty strong{font-size:14px}
+ #team-dialog .sys-seat-empty small{font-size:9px}
+ #team-dialog .sys-team-manage{gap:6px}
+ #team-dialog .sys-own-ready{gap:6px}
+ #team-dialog .sys-own-ready>span{font-size:9px;max-width:none}
+ #team-dialog .sys-team-manage button{padding:6px 10px;font-size:10px;min-height:30px}
+ #team-dialog .sys-companion-form select{padding:6px;width:133px;font-size:9px}
+ #pets-dialog .sys-pets-layout{gap:8px;grid-template-columns:minmax(210px,.82fr) minmax(0,1.7fr)}
+ #pets-dialog .sys-pet-archive{gap:6px}
+ #pets-dialog .sys-section-head h3{font-size:15px}
+ #pets-dialog .sys-section-head>span{font-size:9px}
+ #pets-dialog .sys-pet-cards{gap:6px}
+ #pets-dialog .sys-pet-card{min-height:115px;padding:9px 4px 5px;gap:3px}
+ #pets-dialog .sys-pet-card img{width:70px;height:70px}
+ #pets-dialog .sys-pet-card strong{font-size:10px}
+ #pets-dialog .sys-pet-card small{font-size:8px}
+ #pets-dialog .sys-pet-detail{padding:9px;border-radius:7px}
+ #pets-dialog .sys-pet-title{margin-bottom:4px}
+ #pets-dialog .sys-pet-title h3{font-size:19px}
+ #pets-dialog .sys-pet-body{gap:8px;grid-template-columns:minmax(110px,.7fr) minmax(0,1fr)}
+ #pets-dialog .sys-pet-stage{min-height:140px;padding:3px 0}
+ #pets-dialog .sys-pet-stage img{height:137px;max-width:160px}
+ #pets-dialog .sys-pet-stage>span{font-size:8px;margin-top:2px;letter-spacing:0}
+ #pets-dialog .sys-pet-info{gap:6px}
+ #pets-dialog .sys-pet-xp>div,#pets-dialog .sys-pet-xp strong{font-size:9px}
+ #pets-dialog .sys-xp-track{height:4px;margin-top:4px}
+ #pets-dialog .sys-pet-stats{gap:4px}
+ #pets-dialog .sys-pet-stats>div{padding:5px 7px}
+ #pets-dialog .sys-pet-stats dt{font-size:9px}
+ #pets-dialog .sys-pet-stats dd{font-size:16px}
+ #pets-dialog .sys-pet-ability{padding:6px}
+ #pets-dialog .sys-pet-ability strong{font-size:10px}
+ #pets-dialog .sys-pet-ability span{font-size:8px}
+ #pets-dialog .sys-pet-ability p{font-size:9px;line-height:1.5;margin-top:5px}
+ #pets-dialog .sys-pet-actions{gap:8px;margin:7px 0}
+ #pets-dialog .sys-pet-actions button{padding:6px 12px;min-width:100px;min-height:30px;font-size:10px}
+ #pets-dialog .sys-pet-actions span{font-size:9px}
+ #pets-dialog .sys-rename-form{padding-top:7px;gap:5px}
+ #pets-dialog .sys-rename-form label{font-size:9px}
+ #pets-dialog .sys-rename-form input{padding:6px;font-size:11px}
+ #pets-dialog .sys-rename-form button{padding:6px 9px;font-size:10px;min-height:30px}
+ #pets-dialog .sys-pet-footnote{font-size:8px;margin-top:6px}
+ #pets-dialog .sys-pet-empty{gap:10px}
+ #pets-dialog .sys-pet-empty h3{font-size:21px}
+ #pets-dialog .sys-pet-empty p{font-size:11px}
+ #pets-dialog .sys-pet-empty small{font-size:9px}
+ #bag-dialog .sys-bag-summary{padding:6px 9px;gap:8px}
+ #bag-dialog .sys-bag-summary>div:first-child{gap:4px}
+ #bag-dialog .sys-bag-summary>div:first-child strong{font-size:11px}
+ #bag-dialog .sys-bag-summary>div:first-child span{font-size:9px}
+ #bag-dialog .sys-vitals{gap:12px}
+ #bag-dialog .sys-resource{width:120px}
+ #bag-dialog .sys-resource>div,#bag-dialog .sys-resource strong{font-size:9px}
+ #bag-dialog .sys-resource-track{margin-top:4px;height:4px}
+ #bag-dialog .sys-bag-layout{gap:8px;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr)}
+ #bag-dialog .sys-bag-inventory{gap:6px}
+ #bag-dialog .sys-bag-filters{gap:4px}
+ #bag-dialog .sys-bag-filters button{padding:5px 11px;font-size:10px;min-height:28px}
+ #bag-dialog .sys-bag-grid{gap:6px}
+ #bag-dialog .sys-bag-cell{min-height:92px;padding:12px 3px 5px;gap:3px;border-radius:6px}
+ #bag-dialog .sys-bag-cell :is(.gear-icon,.sys-item-icon){width:42px;height:42px}
+ #bag-dialog .sys-bag-cell strong{font-size:10px}
+ #bag-dialog .sys-bag-cell small{font-size:8px}
+ #bag-dialog .sys-item-count{font-size:9px;right:4px;top:3px}
+ #bag-dialog .sys-bag-detail{padding:8px;border-radius:7px}
+ #bag-dialog .sys-bag-detail-art{width:54px;height:54px;gap:0;margin-bottom:5px;border-radius:7px}
+ #bag-dialog .sys-bag-detail-art :is(.gear-icon,.sys-item-icon){width:37px;height:37px}
+ #bag-dialog .sys-bag-detail-art>span{font-size:8px;letter-spacing:1px}
+ #bag-dialog .sys-bag-detail h3{font-size:18px;margin-bottom:3px}
+ #bag-dialog .sys-detail-caption{font-size:9px;line-height:1.5;margin-bottom:6px}
+ #bag-dialog .sys-item-stats{padding:5px 0;margin-bottom:5px;gap:4px}
+ #bag-dialog .sys-item-stats dt{font-size:9px}
+ #bag-dialog .sys-item-stats dd{font-size:16px}
+ #bag-dialog .sys-item-description{font-size:9px;line-height:1.5;margin:5px 0}
+ #bag-dialog .sys-bag-detail .sys-state-note{font-size:9px;margin:5px 0;padding:5px 7px}
+ #bag-dialog .sys-wide-button{font-size:10px;padding:6px 10px;min-height:30px;margin:4px 0 5px}
+ #bag-dialog .sys-medicine-target{font-size:9px;margin:6px 0;gap:4px}
+ #bag-dialog .sys-medicine-target select{padding:6px;font-size:10px}
+ #bag-dialog .sys-medicine-preview{padding:7px;margin:7px 0;font-size:9px}
+ #bag-dialog .sys-medicine-preview strong{font-size:11px}
+ #bag-dialog .sys-inn-footer{padding-top:6px;gap:7px}
+ #bag-dialog .sys-inn-footer>div{gap:8px}
+ #bag-dialog .sys-inn-footer strong{font-size:10px}
+ #bag-dialog .sys-inn-footer span{font-size:9px}
+ #bag-dialog .sys-inn-footer button{padding:6px 21px;font-size:10px;min-height:30px}
+}
+
+@media(max-width:700px) and (orientation:landscape){
+ #team-dialog .sys-room-actions{gap:5px;flex-wrap:wrap;justify-content:flex-end}
+ #team-dialog .sys-room-actions>span{display:none}
+ #team-dialog .sys-team-summary p span{display:none}
+ #team-dialog .sys-own-ready>span{max-width:95px}
+ #team-dialog .sys-companion-form select{width:112px}
+ #team-dialog .sys-team-seat h4{font-size:13px}
+ #team-dialog .sys-member-actions{flex-direction:column}
+ #team-dialog .sys-member-actions button{width:100%}
+ #pets-dialog .sys-pets-layout{grid-template-columns:minmax(170px,.7fr) minmax(0,1.4fr)}
+ #pets-dialog .sys-pet-body{grid-template-columns:minmax(94px,.65fr) minmax(0,1fr)}
+ #pets-dialog .sys-pet-card img{width:60px;height:60px}
+ #pets-dialog .sys-pet-stage img{height:115px}
+ #pets-dialog .sys-pet-title h3{font-size:17px}
+ #bag-dialog .sys-bag-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #bag-dialog .sys-resource{width:90px}
+ #bag-dialog .sys-vitals{gap:7px}
+}

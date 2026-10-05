@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-05",
+  "tests": {
+    "passed": 134,
+    "failed": 0
+  },
+  "http": [
+    {
+      "level": 12,
+      "skillId": "a",
+      "rank": 2,
+      "damage": 197,
+      "remainingHp": 113,
+      "armor": 0.1,
+      "mpCost": 18
+    },
+    {
+      "level": 27,
+      "skillId": "a",
+      "rank": 3,
+      "damage": 310,
+      "remainingHp": 0,
+      "armor": 0,
+      "mpCost": 18
+    },
+    {
+      "level": 36,
+      "skillId": "ultimate",
+      "rank": 3,
+      "rageCost": 100,
+      "damage": 310
+    }
+  ],
+  "skills": 20,
+  "stagesPerSkill": 3,
+  "thresholds": {
+    "a": [
+      3,
+      12,
+      27
+    ],
+    "passive": [
+      5,
+      16,
+      30
+    ],
+    "b": [
+      10,
+      20,
+      33
+    ],
+    "ultimate": [
+      15,
+      24,
+      36
+    ]
+  },
+  "growth": [
+    1,
+    1.2,
+    1.4
+  ],
+  "additionalEffects": true,
+  "browser": {
+    "testedLevels": [
+      11,
+      12,
+      27,
+      36
+    ],
+    "desktop": [
+      1280,
+      720
+    ],
+    "mobileLandscape": [
+      844,
+      390
+    ],
+    "comparisonAndReleaseButtonReachable": true,
+    "productionSaveUsedForTesting": false,
+    "skillReferenceChecked": {
+      "level": 36,
+      "class": "医师",
+      "passed": true
+    },
+    "productionRefreshChecked": true
+  },
+  "screenshots": [
+    "青竹山麓-技能二阶12级-20261005.jpg",
+    "青竹山麓-技能三阶27级-20261005.jpg",
+    "青竹山麓-技能终极三阶36级-20261005.jpg",
+    "青竹山麓-技能成长手机横屏-20261005.jpg",
+    "青竹山麓-技能成长手机操作-20261005.jpg",
+    "青竹山麓-技能成长正式试玩-20261005.jpg"
+  ],
+  "weChatRuntimeVerified": false
+}

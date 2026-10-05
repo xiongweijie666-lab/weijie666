@@ -1,0 +1,48 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>我的修仙日记 · 青竹山麓</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="systems.css"><link rel="stylesheet" href="skill-ui.css"></head>
+<body><main>
+<header><div><p>我的修仙日记</p><h1>青竹山麓</h1></div><div class="header-actions"><span class="prototype">首张场景 · 本地联机原型</span><button id="settings-open" aria-label="角色试玩设置">角色</button><a href="index.html?formation=1" target="_blank" rel="noopener">满员站位</a><a href="../character-animation-v3/skills.html">技能表</a></div></header>
+<section class="game" aria-label="青竹山麓探索场景">
+ <canvas id="world" tabindex="0" role="img" aria-label="可用摇杆或方向键探索的青竹山麓地图"></canvas>
+ <div id="loading">正在进入青竹山麓…</div>
+ <div class="hero-hud"><img id="hero-portrait" alt="当前角色"><div><strong id="hero-name">陆青岚</strong><span id="hero-level">1级 · 剑士</span><span class="hero-resources" id="hero-resources"></span><div class="xp"><i id="xp-fill"></i></div><small id="xp-text">修行经验</small></div></div>
+ <div class="area-hud"><strong id="area-name">石溪驿站</strong><span id="coordinates">安全区域</span></div>
+ <button class="mini-map" id="mini-open" aria-label="打开怪物分区"><canvas id="mini" width="180" height="120" aria-label="五个怪物分区的小地图"></canvas><span>分区地图</span></button>
+ <div class="map-hint" id="map-hint">摇杆 / WASD移动 · 活动区随机遇敌</div>
+ <div class="joystick" id="joystick" role="group" aria-label="移动摇杆"><span class="cross"></span><span id="knob"></span><small>移动</small></div>
+ <button class="map-fullscreen" data-fullscreen aria-label="进入或退出全屏">⛶</button>
+ <nav class="tools" aria-label="角色功能面板"><button id="skills-open" aria-label="打开技能面板"><i>诀</i>技能<span id="skill-count">0/4</span></button><button id="equipment-open" aria-label="打开装备面板"><i>装</i>装备<span id="equipment-count">0/6</span></button><button id="team-open" aria-label="打开队伍面板"><i>队</i>队伍<span id="party-count">1/5</span></button><button id="pets-open" aria-label="打开宠物面板"><i>宠</i>宠物<span id="pet-count">0</span></button><button id="bag-open" aria-label="打开行囊面板"><i>囊</i>行囊<span id="supply-count">6</span></button></nav>
+ <div class="toast" id="toast" role="status" aria-live="polite"></div>
+ <section class="battle" id="battle" aria-label="回合制战斗" hidden>
+  <div class="battle-head"><div><h2 id="battle-title">回合制战斗</h2><p id="turn-label"></p></div><div class="battle-head-actions"><nav class="battle-menu" aria-label="战斗功能面板"><button data-panel="skills">技能</button><button data-panel="equipment">装备</button><button data-panel="team">队伍</button><button data-panel="pets">宠物</button><button data-panel="bag">行囊</button></nav><button id="retreat">撤退</button></div></div>
+  <div class="formation-tools" id="formation-tools" hidden><label>预览怪物<select id="formation-species" aria-label="预览怪物"></select></label><label class="pet-toggle"><input type="checkbox" id="formation-pets">显示5只宠物</label><button data-fullscreen aria-label="进入或退出全屏">全屏</button><a class="map-return" href="index.html">返回地图</a></div>
+  <div class="battle-view"><canvas id="battle-canvas" width="1000" height="600" role="img" aria-label="队伍与宠物对抗怪物的战斗画面"></canvas><div class="effect-caption" id="effect-caption" hidden><strong></strong><span></span></div><div class="battle-party" id="battle-party"></div></div>
+  <div class="formation-roster" id="formation-roster"></div>
+  <div id="battle-log" class="battle-log" role="status" aria-live="polite"></div>
+  <div class="battle-controls" id="battle-controls"><div class="target-head"><strong>敌方目标</strong><span id="enemy-count"></span></div><div class="targets" id="enemy-targets"></div><details class="friendly"><summary>己方治疗目标</summary><div class="targets" id="ally-targets"></div></details><div class="action-main"><button id="normal-attack" class="primary">普通攻击</button><button id="capture">捕捉</button><button id="defend">防御</button></div><div class="skill-buttons" id="skill-buttons"></div><p class="passive" id="passive-state"></p></div>
+  <div id="battle-result" class="battle-result" hidden><h3 id="result-title"></h3><p id="result-copy"></p><div id="result-loot" class="result-loot"></div><button id="return-map" class="primary">返回地图</button><button id="result-equipment">查看装备</button><button id="result-bag">查看行囊</button><button id="result-pets">查看宠物</button></div>
+ </section>
+</section>
+<p class="below">单人每场1—2只怪 · 队伍最多5人、满队每场最多10只怪 · 每人同时出战1只宠物</p>
+</main>
+<div class="landscape-hint" role="dialog" aria-modal="true" aria-label="横屏提示"><div class="phone-outline"></div><h2>横屏开始修仙</h2><p>请将手机横置，或展开浏览器窗口。</p><button class="primary" data-fullscreen>进入横屏</button><small id="orientation-note">横屏后即可移动探索、组队和战斗</small></div>
+<dialog id="skills-dialog" class="system-dialog skills-dialog" aria-labelledby="skills-title">
+ <div class="dialog-head"><div><h2 id="skills-title">职业技能</h2><p>一式一法 · 各有所长</p></div><button data-close aria-label="关闭技能">×</button></div><nav class="system-tabs" data-panel-tabs="skills" aria-label="切换角色功能"></nav>
+ <div class="skill-layout"><section class="skill-library"><label class="skill-picker">查看职业<select id="skill-class-picker" aria-label="查看技能职业"></select></label><p id="skill-normal" class="normal-comparison"></p><div id="skill-list" class="skill-list"></div></section>
+ <section class="skill-showcase"><div class="showcase-head"><div><small id="skill-theme"></small><h3 id="skill-preview-title"></h3></div><span class="showcase-badge">招式试演</span></div><div class="skill-preview-stage"><canvas id="skill-preview" width="720" height="400" role="img" aria-label="所选技能的释放画面"></canvas><div id="skill-preview-caption" class="preview-caption"></div></div><div class="preview-timeline"><button id="preview-play" class="primary">试演技能</button><button id="preview-pause" disabled>暂停</button><input id="preview-progress" type="range" min="0" max="1000" value="0" aria-label="技能演出进度"></div><div id="skill-detail" class="skill-detail"></div><div class="skill-cast-row"><button id="skill-cast" class="primary" disabled>战斗释放</button><span id="skill-cast-reason"></span></div><small class="preview-note">试演不消耗法力或怒气；角色解锁后可在战斗中使用。</small></section></div>
+</dialog>
+<dialog id="team-dialog" class="system-dialog"><div class="dialog-head"><div><h2>队伍 · 最多5人</h2><p>同行山河 · 共赴历练</p></div><button data-close aria-label="关闭队伍">×</button></div><nav class="system-tabs" data-panel-tabs="team" aria-label="切换角色功能"></nav><div id="team-content"></div></dialog>
+<dialog id="pets-dialog" class="system-dialog"><div class="dialog-head"><div><h2>我的宠物</h2><p>灵兽相伴 · 一人一宠出战</p></div><button data-close aria-label="关闭宠物">×</button></div><nav class="system-tabs" data-panel-tabs="pets" aria-label="切换角色功能"></nav><div id="pet-list"></div></dialog>
+<dialog id="bag-dialog" class="system-dialog"><div class="dialog-head"><div><h2>我的行囊</h2><p>行装与药品 · 历练前整备</p></div><button data-close aria-label="关闭行囊">×</button></div><nav class="system-tabs" data-panel-tabs="bag" aria-label="切换角色功能"></nav><div id="bag-content"></div></dialog>
+<dialog id="equipment-dialog" class="equipment-dialog system-dialog" aria-labelledby="equipment-title">
+ <div class="dialog-head"><div><h2 id="equipment-title">角色行装</h2><p id="equipment-identity"></p></div><button data-close aria-label="关闭装备行囊">×</button></div>
+ <nav class="system-tabs" data-panel-tabs="equipment" aria-label="切换角色功能"></nav>
+ <div class="equipment-layout">
+  <section class="equipment-character" aria-label="装备部位与人物属性"><div class="worn-stage"><div class="portrait-seal">行走山河 · 六件行装</div><img id="equipment-portrait" alt="当前人物立绘"><div id="worn-slots"></div></div><div id="equipment-stats" class="equipment-stats"></div><button id="equipment-auto" class="primary">一键穿戴</button><p id="equipment-state-note" class="equipment-note"></p></section>
+  <section class="equipment-bag" aria-label="装备背包"><div class="bag-head"><h3>可用装备</h3><span id="bag-count"></span></div><nav id="equipment-filters" aria-label="筛选装备部位"></nav><div id="equipment-items" class="equipment-items"></div><p class="equipment-note">替换后，原装备保留在行囊。</p></section>
+  <section id="equipment-detail" class="equipment-detail" aria-label="装备详情与属性比较" aria-live="polite"></section>
+ </div>
+ <div id="equipment-quality-legend" class="equipment-quality-legend"></div>
+</dialog>
+<dialog id="regions-dialog"><div class="dialog-head"><h2>青竹山麓 · 怪物分区</h2><button data-close aria-label="关闭分区">×</button></div><img class="overview" src="assets/map.png" alt="青竹山麓全图：驿站、草坡、溪岸、竹林、石岗和古林"><div class="quality-legend"><span>普通</span><span class="baby">宝宝 · 成长较高</span><span class="mutant">变异 · 成长更高</span></div><div id="zone-list"></div></dialog>
+<dialog id="settings-dialog"><div class="dialog-head"><h2>角色试玩设置</h2><button data-close aria-label="关闭角色设置">×</button></div><p class="dialog-note">切换职业或等级以检查各区域和技能。宠物收藏保留；正常战斗也会获得升级经验。</p><form id="settings-form"><label>职业<select id="class-picker" aria-label="试玩职业"></select></label><label>等级<select id="level-picker" aria-label="试玩等级"></select></label><button class="primary" type="submit">应用试玩设置</button></form></dialog>
+<script type="module" src="game.js"></script></body></html>

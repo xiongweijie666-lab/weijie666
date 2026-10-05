@@ -1,0 +1,31 @@
+{
+  "version": "first-map-v4-five-systems",
+  "date": "2026-10-05",
+  "scope": "横屏浏览器本地联机试玩版",
+  "tests": {"total": 85, "passed": 85, "failed": 0, "files": ["rules.test.mjs", "equipment.test.mjs", "server.test.mjs", "systems.test.mjs", "combat-art.test.mjs"], "output": "五系统自动测试结果-20261005.txt"},
+  "syntaxChecked": ["game.js", "systems-ui.js", "skill-ui.js", "rules.mjs", "server.mjs", "combat-art.mjs"],
+  "browser": {
+    "desktop": "1280×720",
+    "mobileLandscape": "844×390",
+    "consoleErrors": 0,
+    "verified": [
+      "五个入口和面板内切换",
+      "五职业主动技能与终极技能的特效试演、暂停及进度拖动",
+      "人物站立时图像稳定，移动和战斗时播放对应动作",
+      "六部位一键穿戴及属性更新",
+      "另一页面的真人队友加入、准备、移交队长、退出",
+      "邀请四名NPC形成五人满队",
+      "宠物属性、改名、替换参战宠物",
+      "地图回血240到320、回蓝60到100，药品库存各减1",
+      "满法力药品按钮禁用",
+      "满队随机遭遇10只怪，回风斩命中3只并各扣58生命，法力112到86",
+      "战斗中使用灵露恢复86到112，库存2到1并消耗人物行动",
+      "战利品中的装备与恢复药品进入行囊",
+      "战斗中装备、组队及宠物调整限制"
+    ],
+    "idleImageComparison": {"changedChannels": 0, "samePixels": true, "sha256": "10f6ec3b9c234ea786bcc04bfeb4eba86674c9ccd71a62e5e180884bbd63a224"},
+    "proofs": ["青竹山麓-法师技能特效-20261005.jpg", "青竹山麓-新版刀客技能面板-20261005.jpg", "青竹山麓-手机月缚阵-20261005.jpg", "青竹山麓-手机五系统装备-20261005.jpg", "青竹山麓-手机五人队伍-20261005.jpg", "青竹山麓-手机宠物面板-20261005.jpg", "青竹山麓-手机行囊药品-20261005.jpg", "青竹山麓-真实战斗技能-20261005.jpg"]
+  },
+  "service": {"url": "http://127.0.0.1:4177/first-map-v1/index.html", "existingSessionsPreserved": 7, "verification": "本地服务更新验证-20261005.json"},
+  "deliveryLimits": "本轮验证为本机浏览器和本地房间同步。尚未发布微信小程序或公共MMORPG服务。"
+}

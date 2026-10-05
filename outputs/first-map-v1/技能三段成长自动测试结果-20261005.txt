@@ -1,0 +1,814 @@
+TAP version 13
+# Subtest: all five approved standing poses stay still regardless of elapsed time
+ok 1 - all five approved standing poses stay still regardless of elapsed time
+  ---
+  duration_ms: 0.5419
+  type: 'test'
+  ...
+# Subtest: movement retains 12 drawings per second and action clips retain 18
+ok 2 - movement retains 12 drawings per second and action clips retain 18
+  ---
+  duration_ms: 0.1435
+  type: 'test'
+  ...
+# Subtest: major skills have time for anticipation, impact and a tail
+ok 3 - major skills have time for anticipation, impact and a tail
+  ---
+  duration_ms: 0.128
+  type: 'test'
+  ...
+# Subtest: status-only and full-health healing casts still have visible effect targets
+ok 4 - status-only and full-health healing casts still have visible effect targets
+  ---
+  duration_ms: 0.4555
+  type: 'test'
+  ...
+# Subtest: all fifteen active skills use distinct painted effect cells
+ok 5 - all fifteen active skills use distinct painted effect cells
+  ---
+  duration_ms: 0.1023
+  type: 'test'
+  ...
+# Subtest: healer passive heals the caster while the same normal attack hits the enemy
+ok 6 - healer passive heals the caster while the same normal attack hits the enemy
+  ---
+  duration_ms: 0.1569
+  type: 'test'
+  ...
+# Subtest: passive healing draws no impact texture on the healer
+ok 7 - passive healing draws no impact texture on the healer
+  ---
+  duration_ms: 0.6373
+  type: 'test'
+  ...
+# Subtest: a full-mana caster receives a recovery effect rather than a self slash
+ok 8 - a full-mana caster receives a recovery effect rather than a self slash
+  ---
+  duration_ms: 0.0819
+  type: 'test'
+  ...
+# Subtest: resting combatants have no translation, rotation or pose loop
+ok 9 - resting combatants have no translation, rotation or pose loop
+  ---
+  duration_ms: 0.2227
+  type: 'test'
+  ...
+# Subtest: every skill can render its full timeline without depending on a damage hit
+ok 10 - every skill can render its full timeline without depending on a damage hit
+  ---
+  duration_ms: 3.0263
+  type: 'test'
+  ...
+# Subtest: new heroes receive six unique unequipped starter items with role-specific weapons
+ok 11 - new heroes receive six unique unequipped starter items with role-specific weapons
+  ---
+  duration_ms: 2.2801
+  type: 'test'
+  ...
+# Subtest: wearing and removing gear changes exactly its own stats without duplicating items
+ok 12 - wearing and removing gear changes exactly its own stats without duplicating items
+  ---
+  duration_ms: 1.316
+  type: 'test'
+  ...
+# Subtest: all six slots can be equipped individually for every profession
+ok 13 - all six slots can be equipped individually for every profession
+  ---
+  duration_ms: 2.5751
+  type: 'test'
+  ...
+# Subtest: replacing an item returns the old item to the bag and avoids stacking both bonuses
+ok 14 - replacing an item returns the old item to the bag and avoids stacking both bonuses
+  ---
+  duration_ms: 0.8585
+  type: 'test'
+  ...
+# Subtest: foreign, forged and wrong-class items cannot be equipped
+ok 15 - foreign, forged and wrong-class items cannot be equipped
+  ---
+  duration_ms: 0.4273
+  type: 'test'
+  ...
+# Subtest: level requirements reject higher gear until the hero reaches its level
+ok 16 - level requirements reject higher gear until the hero reaches its level
+  ---
+  duration_ms: 0.3303
+  type: 'test'
+  ...
+# Subtest: class or level changes keep the bag and remove incompatible worn items
+ok 17 - class or level changes keep the bag and remove incompatible worn items
+  ---
+  duration_ms: 0.4428
+  type: 'test'
+  ...
+# Subtest: best gear uses compatible unlocked items and skips stronger locked ones
+ok 18 - best gear uses compatible unlocked items and skips stronger locked ones
+  ---
+  duration_ms: 0.6849
+  type: 'test'
+  ...
+# Subtest: equipment changes are blocked throughout a battle including the result screen
+ok 19 - equipment changes are blocked throughout a battle including the result screen
+  ---
+  duration_ms: 0.5104
+  type: 'test'
+  ...
+# Subtest: worn gear affects actual damage, health, mana and turn order
+ok 20 - worn gear affects actual damage, health, mana and turn order
+  ---
+  duration_ms: 1.5025
+  type: 'test'
+  ...
+# Subtest: healer weapon increases healing through the actual skill calculation
+ok 21 - healer weapon increases healing through the actual skill calculation
+  ---
+  duration_ms: 0.7114
+  type: 'test'
+  ...
+# Subtest: each party member owns separate drops and settlement is idempotent
+ok 22 - each party member owns separate drops and settlement is idempotent
+  ---
+  duration_ms: 0.6913
+  type: 'test'
+  ...
+# Subtest: captured monsters and defeats grant no equipment
+ok 23 - captured monsters and defeats grant no equipment
+  ---
+  duration_ms: 0.4908
+  type: 'test'
+  ...
+# Subtest: drops can fail and quality rolls can produce legendary items
+ok 24 - drops can fail and quality rolls can produce legendary items
+  ---
+  duration_ms: 0.3747
+  type: 'test'
+  ...
+# Subtest: equipment and bonuses survive reload while old saves receive a kit only once
+ok 25 - equipment and bonuses survive reload while old saves receive a kit only once
+  ---
+  duration_ms: 0.6153
+  type: 'test'
+  ...
+# Subtest: safe roads and standing still never start an encounter
+ok 26 - safe roads and standing still never start an encounter
+  ---
+  duration_ms: 1.4022
+  type: 'test'
+  ...
+# Subtest: walking in each region randomly encounters its own species and level
+ok 27 - walking in each region randomly encounters its own species and level
+  ---
+  duration_ms: 0.8064
+  type: 'test'
+  ...
+# Subtest: encounter rolls can fail and only walking allows the next roll
+ok 28 - encounter rolls can fail and only walking allows the next roll
+  ---
+  duration_ms: 0.4321
+  type: 'test'
+  ...
+# Subtest: only party leader movement starts a shared encounter
+ok 29 - only party leader movement starts a shared encounter
+  ---
+  duration_ms: 0.8235
+  type: 'test'
+  ...
+# Subtest: random encounters retain baby and mutant rolls and full-party ten-monster cap
+ok 30 - random encounters retain baby and mutant rolls and full-party ten-monster cap
+  ---
+  duration_ms: 0.5478
+  type: 'test'
+  ...
+# Subtest: leaving the region clears accumulated encounter distance
+ok 31 - leaving the region clears accumulated encounter distance
+  ---
+  duration_ms: 0.1011
+  type: 'test'
+  ...
+# Subtest: returning from battle grants a walking buffer before another encounter
+ok 32 - returning from battle grants a walking buffer before another encounter
+  ---
+  duration_ms: 0.7693
+  type: 'test'
+  ...
+# Subtest: five fixed encounter regions and three qualities
+ok 33 - five fixed encounter regions and three qualities
+  ---
+  duration_ms: 0.4354
+  type: 'test'
+  ...
+# Subtest: party caps at five including real players; repeat joining is idempotent
+ok 34 - party caps at five including real players; repeat joining is idempotent
+  ---
+  duration_ms: 0.6638
+  type: 'test'
+  ...
+# Subtest: NPC companions also count toward the five seats
+ok 35 - NPC companions also count toward the five seats
+  ---
+  duration_ms: 0.2763
+  type: 'test'
+  ...
+# Subtest: solo encounter contains exactly one or two enemies
+ok 36 - solo encounter contains exactly one or two enemies
+  ---
+  duration_ms: 0.2832
+  type: 'test'
+  ...
+# Subtest: two to five heroes scale to their own count through twice that count, at most ten
+ok 37 - two to five heroes scale to their own count through twice that count, at most ten
+  ---
+  duration_ms: 2.0415
+  type: 'test'
+  ...
+# Subtest: a successful capture removes the enemy and persists one owned equipped pet
+ok 38 - a successful capture removes the enemy and persists one owned equipped pet
+  ---
+  duration_ms: 0.5191
+  type: 'test'
+  ...
+# Subtest: capture can fail and still consumes a turn without creating a pet
+ok 39 - capture can fail and still consumes a turn without creating a pet
+  ---
+  duration_ms: 0.3228
+  type: 'test'
+  ...
+# Subtest: a captured pet participates next battle without increasing enemy scaling
+ok 40 - a captured pet participates next battle without increasing enemy scaling
+  ---
+  duration_ms: 0.5118
+  type: 'test'
+  ...
+# Subtest: foreign pets and friendly capture targets are rejected without spending a turn
+ok 41 - foreign pets and friendly capture targets are rejected without spending a turn
+  ---
+  duration_ms: 0.2376
+  type: 'test'
+  ...
+# Subtest: skill one unlocks at character level three and rejection does not spend mana
+ok 42 - skill one unlocks at character level three and rejection does not spend mana
+  ---
+  duration_ms: 0.6271
+  type: 'test'
+  ...
+# Subtest: ultimate needs both level fifteen and one hundred rage
+ok 43 - ultimate needs both level fifteen and one hundred rage
+  ---
+  duration_ms: 0.757
+  type: 'test'
+  ...
+# Subtest: party composition cannot change during an active shared fight
+ok 44 - party composition cannot change during an active shared fight
+  ---
+  duration_ms: 0.3353
+  type: 'test'
+  ...
+# Subtest: doctor healing spends mana, restores an ally and inflicts no enemy damage
+ok 45 - doctor healing spends mana, restores an ally and inflicts no enemy damage
+  ---
+  duration_ms: 0.3479
+  type: 'test'
+  ...
+# Subtest: mage primary target does not also receive splash damage
+ok 46 - mage primary target does not also receive splash damage
+  ---
+  duration_ms: 0.2866
+  type: 'test'
+  ...
+# Subtest: third-attack passive stays inactive below five and activates from five
+ok 47 - third-attack passive stays inactive below five and activates from five
+  ---
+  duration_ms: 1.2654
+  type: 'test'
+  ...
+# Subtest: HTTP walking starts a shared random battle and schedules automatic actors
+ok 48 - HTTP walking starts a shared random battle and schedules automatic actors
+  ---
+  duration_ms: 98.1949
+  type: 'test'
+  ...
+# Subtest: HTTP five-member party rejects sixth member and gives at most ten enemies
+ok 49 - HTTP five-member party rejects sixth member and gives at most ten enemies
+  ---
+  duration_ms: 214.5462
+  type: 'test'
+  ...
+# Subtest: HTTP simultaneous commands resolve only one action and reject unauthenticated calls
+ok 50 - HTTP simultaneous commands resolve only one action and reject unauthenticated calls
+  ---
+  duration_ms: 15.478
+  type: 'test'
+  ...
+# Subtest: HTTP captures and equipped pets survive server restart with the same session
+ok 51 - HTTP captures and equipped pets survive server restart with the same session
+  ---
+  duration_ms: 25.4229
+  type: 'test'
+  ...
+# Subtest: HTTP equipment validates ownership and saves worn bonuses across restart
+ok 52 - HTTP equipment validates ownership and saves worn bonuses across restart
+  ---
+  duration_ms: 138.9607
+  type: 'test'
+  ...
+# Subtest: HTTP loot appears once per owner and equipment waits until return to map
+ok 53 - HTTP loot appears once per owner and equipment waits until return to map
+  ---
+  duration_ms: 149.9384
+  type: 'test'
+  ...
+# Subtest: HTTP team readiness and leader transfer validate membership and control departure
+ok 54 - HTTP team readiness and leader transfer validate membership and control departure
+  ---
+  duration_ms: 217.1019
+  type: 'test'
+  ...
+# Subtest: HTTP map medicines and inn rest use saved resources and ignore forged recovery amounts
+ok 55 - HTTP map medicines and inn rest use saved resources and ignore forged recovery amounts
+  ---
+  duration_ms: 94.4397
+  type: 'test'
+  ...
+# Subtest: HTTP combat medicines restore the selected ally and protect inventory from duplicate actions
+ok 56 - HTTP combat medicines restore the selected ally and protect inventory from duplicate actions
+  ---
+  duration_ms: 46.3479
+  type: 'test'
+  ...
+# Subtest: HTTP captured pet rename checks ownership and publishes its fighting ability
+ok 57 - HTTP captured pet rename checks ownership and publishes its fighting ability
+  ---
+  duration_ms: 110.2817
+  type: 'test'
+  ...
+# Subtest: HTTP default scheduler honors the full capture duration before allowing return
+ok 58 - HTTP default scheduler honors the full capture duration before allowing return
+  ---
+  duration_ms: 1561.5787
+  type: 'test'
+  ...
+# Subtest: HTTP server restart restores shared battles and schedules saved automatic actors
+ok 59 - HTTP server restart restores shared battles and schedules saved automatic actors
+  ---
+  duration_ms: 107.88
+  type: 'test'
+  ...
+# Subtest: 剑士 a upgrades on the exact requested levels and never early
+ok 60 - 剑士 a upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 1.0237
+  type: 'test'
+  ...
+# Subtest: 剑士 passive upgrades on the exact requested levels and never early
+ok 61 - 剑士 passive upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.1918
+  type: 'test'
+  ...
+# Subtest: 剑士 b upgrades on the exact requested levels and never early
+ok 62 - 剑士 b upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0818
+  type: 'test'
+  ...
+# Subtest: 剑士 ultimate upgrades on the exact requested levels and never early
+ok 63 - 剑士 ultimate upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0536
+  type: 'test'
+  ...
+# Subtest: 刀客 a upgrades on the exact requested levels and never early
+ok 64 - 刀客 a upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0619
+  type: 'test'
+  ...
+# Subtest: 刀客 passive upgrades on the exact requested levels and never early
+ok 65 - 刀客 passive upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.082
+  type: 'test'
+  ...
+# Subtest: 刀客 b upgrades on the exact requested levels and never early
+ok 66 - 刀客 b upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0776
+  type: 'test'
+  ...
+# Subtest: 刀客 ultimate upgrades on the exact requested levels and never early
+ok 67 - 刀客 ultimate upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.041
+  type: 'test'
+  ...
+# Subtest: 刺客 a upgrades on the exact requested levels and never early
+ok 68 - 刺客 a upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.1152
+  type: 'test'
+  ...
+# Subtest: 刺客 passive upgrades on the exact requested levels and never early
+ok 69 - 刺客 passive upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.1268
+  type: 'test'
+  ...
+# Subtest: 刺客 b upgrades on the exact requested levels and never early
+ok 70 - 刺客 b upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0929
+  type: 'test'
+  ...
+# Subtest: 刺客 ultimate upgrades on the exact requested levels and never early
+ok 71 - 刺客 ultimate upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0418
+  type: 'test'
+  ...
+# Subtest: 法师 a upgrades on the exact requested levels and never early
+ok 72 - 法师 a upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0338
+  type: 'test'
+  ...
+# Subtest: 法师 passive upgrades on the exact requested levels and never early
+ok 73 - 法师 passive upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0443
+  type: 'test'
+  ...
+# Subtest: 法师 b upgrades on the exact requested levels and never early
+ok 74 - 法师 b upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0354
+  type: 'test'
+  ...
+# Subtest: 法师 ultimate upgrades on the exact requested levels and never early
+ok 75 - 法师 ultimate upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.027
+  type: 'test'
+  ...
+# Subtest: 医师 a upgrades on the exact requested levels and never early
+ok 76 - 医师 a upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0303
+  type: 'test'
+  ...
+# Subtest: 医师 passive upgrades on the exact requested levels and never early
+ok 77 - 医师 passive upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0229
+  type: 'test'
+  ...
+# Subtest: 医师 b upgrades on the exact requested levels and never early
+ok 78 - 医师 b upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0226
+  type: 'test'
+  ...
+# Subtest: 医师 ultimate upgrades on the exact requested levels and never early
+ok 79 - 医师 ultimate upgrades on the exact requested levels and never early
+  ---
+  duration_ms: 0.0243
+  type: 'test'
+  ...
+# Subtest: swordsman-luqinglan first skill gains power without adding a normal attack or extra cost
+ok 80 - swordsman-luqinglan first skill gains power without adding a normal attack or extra cost
+  ---
+  duration_ms: 3.7012
+  type: 'test'
+  ...
+# Subtest: saber-hanpoyue first skill gains power without adding a normal attack or extra cost
+ok 81 - saber-hanpoyue first skill gains power without adding a normal attack or extra cost
+  ---
+  duration_ms: 1.3589
+  type: 'test'
+  ...
+# Subtest: assassin-xieqian first skill gains power without adding a normal attack or extra cost
+ok 82 - assassin-xieqian first skill gains power without adding a normal attack or extra cost
+  ---
+  duration_ms: 0.491
+  type: 'test'
+  ...
+# Subtest: mage-suyingyue first skill gains power without adding a normal attack or extra cost
+ok 83 - mage-suyingyue first skill gains power without adding a normal attack or extra cost
+  ---
+  duration_ms: 0.412
+  type: 'test'
+  ...
+# Subtest: healer-shenzhiwei first skill gains power without adding a normal attack or extra cost
+ok 84 - healer-shenzhiwei first skill gains power without adding a normal attack or extra cost
+  ---
+  duration_ms: 0.3048
+  type: 'test'
+  ...
+# Subtest: swordsman-luqinglan third skill upgrades separately at 20 and 33
+ok 85 - swordsman-luqinglan third skill upgrades separately at 20 and 33
+  ---
+  duration_ms: 0.4338
+  type: 'test'
+  ...
+# Subtest: saber-hanpoyue third skill upgrades separately at 20 and 33
+ok 86 - saber-hanpoyue third skill upgrades separately at 20 and 33
+  ---
+  duration_ms: 0.3312
+  type: 'test'
+  ...
+# Subtest: assassin-xieqian third skill upgrades separately at 20 and 33
+ok 87 - assassin-xieqian third skill upgrades separately at 20 and 33
+  ---
+  duration_ms: 0.2686
+  type: 'test'
+  ...
+# Subtest: mage moon binding upgrades ongoing damage and slow without dealing an immediate hit
+ok 88 - mage moon binding upgrades ongoing damage and slow without dealing an immediate hit
+  ---
+  duration_ms: 0.6763
+  type: 'test'
+  ...
+# Subtest: healer third skill upgrades both healing components and remains a non-damaging action
+ok 89 - healer third skill upgrades both healing components and remains a non-damaging action
+  ---
+  duration_ms: 0.495
+  type: 'test'
+  ...
+# Subtest: swordsman-luqinglan ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+ok 90 - swordsman-luqinglan ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+  ---
+  duration_ms: 0.5976
+  type: 'test'
+  ...
+# Subtest: saber-hanpoyue ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+ok 91 - saber-hanpoyue ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+  ---
+  duration_ms: 0.4113
+  type: 'test'
+  ...
+# Subtest: assassin-xieqian ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+ok 92 - assassin-xieqian ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+  ---
+  duration_ms: 0.2945
+  type: 'test'
+  ...
+# Subtest: mage-suyingyue ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+ok 93 - mage-suyingyue ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+  ---
+  duration_ms: 0.2313
+  type: 'test'
+  ...
+# Subtest: healer-shenzhiwei ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+ok 94 - healer-shenzhiwei ultimate upgrades at 24 and 36 and keeps the 100-rage cost
+  ---
+  duration_ms: 0.3229
+  type: 'test'
+  ...
+# Subtest: saber shield, armor break and passive mitigation use their own skill ranks
+ok 95 - saber shield, armor break and passive mitigation use their own skill ranks
+  ---
+  duration_ms: 0.9158
+  type: 'test'
+  ...
+# Subtest: all passive upgrades enhance their trigger rather than the normal attack base
+ok 96 - all passive upgrades enhance their trigger rather than the normal attack base
+  ---
+  duration_ms: 1.0716
+  type: 'test'
+  ...
+# Subtest: healer ultimate upgrades healing, regeneration and protection together
+ok 97 - healer ultimate upgrades healing, regeneration and protection together
+  ---
+  duration_ms: 0.6182
+  type: 'test'
+  ...
+# Subtest: natural leveling activates a new rank and save restore derives it without resetting belongings
+ok 98 - natural leveling activates a new rank and save restore derives it without resetting belongings
+  ---
+  duration_ms: 1.4744
+  type: 'test'
+  ...
+# Subtest: trial settings accept all eight upgrade levels up to 36 and reject invalid levels
+ok 99 - trial settings accept all eight upgrade levels up to 36 and reject invalid levels
+  ---
+  duration_ms: 0.5554
+  type: 'test'
+  ...
+# Subtest: sword upgraded thrust breaks armor and its third normal grants a sword-intent shield
+ok 100 - sword upgraded thrust breaks armor and its third normal grants a sword-intent shield
+  ---
+  duration_ms: 1.1638
+  type: 'test'
+  ...
+# Subtest: sword upgraded sweep slows hit enemies and ultimate leaves continuing sword wounds
+ok 101 - sword upgraded sweep slows hit enemies and ultimate leaves continuing sword wounds
+  ---
+  duration_ms: 0.8997
+  type: 'test'
+  ...
+# Subtest: saber upgraded attacks give protection while its passive gives a small self heal
+ok 102 - saber upgraded attacks give protection while its passive gives a small self heal
+  ---
+  duration_ms: 1.3441
+  type: 'test'
+  ...
+# Subtest: assassin gains pursuit slow, weak-point rage and a post-ultimate stealth window
+ok 103 - assassin gains pursuit slow, weak-point rage and a post-ultimate stealth window
+  ---
+  duration_ms: 1.3085
+  type: 'test'
+  ...
+# Subtest: mage upgrades add burn, mana recovery, binding armor break and meteor slow
+ok 104 - mage upgrades add burn, mana recovery, binding armor break and meteor slow
+  ---
+  duration_ms: 0.7543
+  type: 'test'
+  ...
+# Subtest: healer upgrades add herb slow, passive mana, protective treatment and lotus shields
+ok 105 - healer upgrades add herb slow, passive mana, protective treatment and lotus shields
+  ---
+  duration_ms: 0.846
+  type: 'test'
+  ...
+# Subtest: new bonuses respect the passive trigger and stronger protection is not weakened
+ok 106 - new bonuses respect the passive trigger and stronger protection is not weakened
+  ---
+  duration_ms: 0.5007
+  type: 'test'
+  ...
+# Subtest: upgraded passive shield preserves a stronger existing shield and its duration
+ok 107 - upgraded passive shield preserves a stronger existing shield and its duration
+  ---
+  duration_ms: 0.1532
+  type: 'test'
+  ...
+# Subtest: starter medicines migrate once and a saved empty bag remains empty
+ok 108 - starter medicines migrate once and a saved empty bag remains empty
+  ---
+  duration_ms: 1.722
+  type: 'test'
+  ...
+# Subtest: equipment changes preserve resource deficits even when lower maximum clamps health to zero
+ok 109 - equipment changes preserve resource deficits even when lower maximum clamps health to zero
+  ---
+  duration_ms: 1.1913
+  type: 'test'
+  ...
+# Subtest: medicine consumes retained health loss before equipment can restore its maximum
+ok 110 - medicine consumes retained health loss before equipment can restore its maximum
+  ---
+  duration_ms: 0.5303
+  type: 'test'
+  ...
+# Subtest: medicine can reduce a larger retained loss without clearing it at zero health
+ok 111 - medicine can reduce a larger retained loss without clearing it at zero health
+  ---
+  duration_ms: 0.3597
+  type: 'test'
+  ...
+# Subtest: battle settlement preserves clamped health loss when another hero remains alive
+ok 112 - battle settlement preserves clamped health loss when another hero remains alive
+  ---
+  duration_ms: 0.5212
+  type: 'test'
+  ...
+# Subtest: combat mana medicine consumes retained loss and reports the actual restoration
+ok 113 - combat mana medicine consumes retained loss and reports the actual restoration
+  ---
+  duration_ms: 0.7345
+  type: 'test'
+  ...
+# Subtest: settlement persists spent mana and wounds for the next encounter and level gains adjust the maximum
+ok 114 - settlement persists spent mana and wounds for the next encounter and level gains adjust the maximum
+  ---
+  duration_ms: 0.9734
+  type: 'test'
+  ...
+# Subtest: map medicines restore actual resources, reject full resources and never consume missing inventory
+ok 115 - map medicines restore actual resources, reject full resources and never consume missing inventory
+  ---
+  duration_ms: 0.5279
+  type: 'test'
+  ...
+# Subtest: rest requires the inn and map state; retreat and defeat recover the party
+ok 116 - rest requires the inn and map state; retreat and defeat recover the party
+  ---
+  duration_ms: 0.4098
+  type: 'test'
+  ...
+# Subtest: combat medicine costs one action, heals a living pet and uses the actor owner inventory
+ok 117 - combat medicine costs one action, heals a living pet and uses the actor owner inventory
+  ---
+  duration_ms: 0.3469
+  type: 'test'
+  ...
+# Subtest: invalid combat medicine targets and full resources leave inventory and turn untouched
+ok 118 - invalid combat medicine targets and full resources leave inventory and turn untouched
+  ---
+  duration_ms: 0.228
+  type: 'test'
+  ...
+# Subtest: each owner receives medicine loot once and medicine rolls do not change equipment rolls
+ok 119 - each owner receives medicine loot once and medicine rolls do not change equipment rolls
+  ---
+  duration_ms: 0.6888
+  type: 'test'
+  ...
+# Subtest: unready real party members block direct and walking encounters until ready
+ok 120 - unready real party members block direct and walking encounters until ready
+  ---
+  duration_ms: 0.7867
+  type: 'test'
+  ...
+# Subtest: leadership can transfer only to a real member and the new leader controls encounters
+ok 121 - leadership can transfer only to a real member and the new leader controls encounters
+  ---
+  duration_ms: 0.6439
+  type: 'test'
+  ...
+# Subtest: result screens and busy actions prevent character, party, pet and return mutations
+ok 122 - result screens and busy actions prevent character, party, pet and return mutations
+  ---
+  duration_ms: 0.7997
+  type: 'test'
+  ...
+# Subtest: owned pets can be renamed with at most twelve characters and publish actual stats and abilities
+ok 123 - owned pets can be renamed with at most twelve characters and publish actual stats and abilities
+  ---
+  duration_ms: 0.4804
+  type: 'test'
+  ...
+# Subtest: offensive pet skills use their species multiplier and three-round cooldown
+ok 124 - offensive pet skills use their species multiplier and three-round cooldown
+  ---
+  duration_ms: 0.7224
+  type: 'test'
+  ...
+# Subtest: tuanzi heals its injured owner and turtle protects its owner without dealing damage
+ok 125 - tuanzi heals its injured owner and turtle protects its owner without dealing damage
+  ---
+  duration_ms: 0.3777
+  type: 'test'
+  ...
+# Subtest: NPC and offline hero AI cast unlocked active skills and rage ultimates while online heroes wait
+ok 126 - NPC and offline hero AI cast unlocked active skills and rage ultimates while online heroes wait
+  ---
+  duration_ms: 0.9309
+  type: 'test'
+  ...
+# Subtest: level ten AI uses an area skill for several enemies and falls back when mana is exhausted
+ok 127 - level ten AI uses an area skill for several enemies and falls back when mana is exhausted
+  ---
+  duration_ms: 0.1399
+  type: 'test'
+  ...
+# Subtest: status-only mage skill reports every affected target and its animation duration
+ok 128 - status-only mage skill reports every affected target and its animation duration
+  ---
+  duration_ms: 0.2074
+  type: 'test'
+  ...
+# Subtest: healer ultimate reports full-health beneficiaries receiving regen and protection
+ok 129 - healer ultimate reports full-health beneficiaries receiving regen and protection
+  ---
+  duration_ms: 0.2515
+  type: 'test'
+  ...
+# Subtest: healer ultimate damages the selected enemy outside the first three positions
+ok 130 - healer ultimate damages the selected enemy outside the first three positions
+  ---
+  duration_ms: 0.3474
+  type: 'test'
+  ...
+# Subtest: self-applied regeneration and protection last two subsequent turns after the ultimate
+ok 131 - self-applied regeneration and protection last two subsequent turns after the ultimate
+  ---
+  duration_ms: 0.1862
+  type: 'test'
+  ...
+# Subtest: party medicines drop into each owner bag and failed or captured fights add none
+ok 132 - party medicines drop into each owner bag and failed or captured fights add none
+  ---
+  duration_ms: 0.4256
+  type: 'test'
+  ...
+# Subtest: triggered normal attack passives are visible in combat events
+ok 133 - triggered normal attack passives are visible in combat events
+  ---
+  duration_ms: 0.0997
+  type: 'test'
+  ...
+# Subtest: world reload restores teams, companions and active battle turns without a stale busy flag
+ok 134 - world reload restores teams, companions and active battle turns without a stale busy flag
+  ---
+  duration_ms: 0.8553
+  type: 'test'
+  ...
+1..134
+# tests 134
+# suites 0
+# pass 134
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2868.9599

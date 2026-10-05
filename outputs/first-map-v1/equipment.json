@@ -1,0 +1,31 @@
+{
+  "slots": [
+    {"id":"weapon","name":"武器","stat":"atk","values":[4,12,22,32]},
+    {"id":"head","name":"头饰","stat":"maxHp","values":[12,28,48,68],"names":["布巾","青玉冠","云纹冠","灵霄冠"]},
+    {"id":"body","name":"衣服","stat":"def","values":[3,7,12,17],"names":["麻布衣","青云袍","流霞衣","玄灵法衣"]},
+    {"id":"belt","name":"腰带","stat":"maxHp","values":[18,42,72,102],"names":["布腰带","青丝带","盘龙带","乾坤腰带"]},
+    {"id":"feet","name":"鞋子","stat":"speed","values":[1,2,3,4],"names":["布履","轻风履","踏云靴","追星履"]},
+    {"id":"charm","name":"饰品","stat":"maxMp","values":[12,20,30,40],"names":["平安符","青玉佩","明月坠","玲珑灵佩"]}
+  ],
+  "levels": [1,5,10,15],
+  "qualities": [
+    {"id":"common","name":"凡品","color":"#77796e","multiplier":1},
+    {"id":"fine","name":"良品","color":"#4c8054","multiplier":1.2},
+    {"id":"rare","name":"上品","color":"#427997","multiplier":1.45},
+    {"id":"epic","name":"珍品","color":"#8965a1","multiplier":1.8},
+    {"id":"legendary","name":"灵品","color":"#ab7b29","multiplier":2.2}
+  ],
+  "weapons": {
+    "swordsman-luqinglan":{"icon":"sword","names":["木剑","青锋剑","流云剑","青岚剑"]},
+    "saber-hanpoyue":{"icon":"saber","names":["短刀","玄铁刀","赤霄刀","破岳刀"]},
+    "assassin-xieqian":{"icon":"daggers","names":["双匕","乌金匕","夜影双刺","无声刃"]},
+    "mage-suyingyue":{"icon":"staff","names":["竹杖","灵纹杖","月华杖","星罗法杖"]},
+    "healer-shenzhiwei":{"icon":"gourd","names":["药葫芦","玉露葫芦","回春葫芦","九转药葫"]}
+  },
+  "statNames":{"maxHp":"气血","maxMp":"法力","atk":"攻击 / 术力","def":"防御","speed":"速度"},
+  "drops": {
+    "normal":{"chance":0.3,"weights":[0.6,0.25,0.1,0.04,0.01]},
+    "baby":{"chance":0.45,"weights":[0.35,0.35,0.2,0.08,0.02]},
+    "mutant":{"chance":0.65,"weights":[0.1,0.3,0.35,0.2,0.05]}
+  }
+}

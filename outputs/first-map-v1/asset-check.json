@@ -1,0 +1,205 @@
+{
+  "checksPassed": true,
+  "checks": [
+    {
+      "id": "map",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "tuanzi",
+      "kind": "normal",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 5,
+        "top": 168,
+        "width": 556,
+        "height": 681
+      }
+    },
+    {
+      "id": "tuanzi",
+      "kind": "baby",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 556,
+        "top": 412,
+        "width": 400,
+        "height": 437
+      }
+    },
+    {
+      "id": "tuanzi",
+      "kind": "mutant",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 969,
+        "top": 171,
+        "width": 567,
+        "height": 683
+      }
+    },
+    {
+      "id": "turtle",
+      "kind": "normal",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 16,
+        "top": 248,
+        "width": 593,
+        "height": 528
+      }
+    },
+    {
+      "id": "turtle",
+      "kind": "baby",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 596,
+        "top": 466,
+        "width": 391,
+        "height": 315
+      }
+    },
+    {
+      "id": "turtle",
+      "kind": "mutant",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 967,
+        "top": 247,
+        "width": 568,
+        "height": 530
+      }
+    },
+    {
+      "id": "wolf",
+      "kind": "normal",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 1,
+        "top": 91,
+        "width": 582,
+        "height": 793
+      }
+    },
+    {
+      "id": "wolf",
+      "kind": "baby",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 577,
+        "top": 373,
+        "width": 417,
+        "height": 503
+      }
+    },
+    {
+      "id": "wolf",
+      "kind": "mutant",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 940,
+        "top": 93,
+        "width": 596,
+        "height": 793
+      }
+    },
+    {
+      "id": "boar",
+      "kind": "normal",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 0,
+        "top": 194,
+        "width": 615,
+        "height": 653
+      }
+    },
+    {
+      "id": "boar",
+      "kind": "baby",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 595,
+        "top": 494,
+        "width": 367,
+        "height": 350
+      }
+    },
+    {
+      "id": "boar",
+      "kind": "mutant",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 944,
+        "top": 186,
+        "width": 592,
+        "height": 661
+      }
+    },
+    {
+      "id": "monkey",
+      "kind": "normal",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 12,
+        "top": 98,
+        "width": 591,
+        "height": 824
+      }
+    },
+    {
+      "id": "monkey",
+      "kind": "baby",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 588,
+        "top": 419,
+        "width": 374,
+        "height": 458
+      }
+    },
+    {
+      "id": "monkey",
+      "kind": "mutant",
+      "width": 320,
+      "height": 340,
+      "hasAlpha": true,
+      "sourceBox": {
+        "left": 965,
+        "top": 107,
+        "width": 565,
+        "height": 824
+      }
+    }
+  ]
+}

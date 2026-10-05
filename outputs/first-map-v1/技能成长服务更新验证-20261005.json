@@ -1,0 +1,11 @@
+{
+  "url": "http://127.0.0.1:4177/first-map-v1/index.html",
+  "sessionsPreserved": 7,
+  "levelClassInventoryEquipmentPetsCoordinatesSuppliesVitalsPreserved": true,
+  "partyAndBattlePreserved": true,
+  "servedAssets": 6,
+  "skills": 20,
+  "stagesPerSkill": 3,
+  "trialMaxLevel": 36,
+  "passed": true
+}

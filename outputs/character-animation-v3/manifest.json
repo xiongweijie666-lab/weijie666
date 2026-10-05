@@ -1,0 +1,5359 @@
+{
+  "version": 3,
+  "frameSize": [
+    512,
+    512
+  ],
+  "fpsByAction": {
+    "idle": 12,
+    "walk": 12,
+    "attack": 18,
+    "cast": 18,
+    "hit": 18
+  },
+  "characters": [
+    {
+      "id": "swordsman-luqinglan",
+      "name": "陆青岚",
+      "profession": "剑士",
+      "version": 3,
+      "frameSize": [
+        512,
+        512
+      ],
+      "pivot": {
+        "x": 256,
+        "y": 440
+      },
+      "reference": "../cast-v5/swordsman-luqinglan.png",
+      "view": "three-quarter front/right",
+      "method": "whole-figure sprite frames; uniform scaling only, no skeletal reconstruction or body warping",
+      "fit": 0.8,
+      "clips": [
+        {
+          "id": "idle",
+          "name": "待机",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 1000,
+          "atlas": "atlases/swordsman-luqinglan-idle.png",
+          "gifPreview": "previews/swordsman-luqinglan-idle.gif",
+          "frames": [
+            {
+              "file": "frames/swordsman-luqinglan/idle/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                44,
+                11,
+                347,
+                388
+              ],
+              "sha256": "ecef6918bb83a6b12536225446704b27f46ef96046ab44c006a266a24337fae5"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                360,
+                10,
+                661,
+                389
+              ],
+              "sha256": "72192b3051b5c23c70baa4556e7c4cf003ef7778d8483167e4f4a610f081285e"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                705,
+                12,
+                1004,
+                389
+              ],
+              "sha256": "6c3561d69bb169427141b0bbedf0506ac8949bc86e22f310ba31a82ff395f386"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                43,
+                388,
+                349,
+                769
+              ],
+              "sha256": "05de2c832ba34f13b2e20ee6e7e9db1b7a702c6fffbb55dae99d1242c15b62b3"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                357,
+                388,
+                677,
+                770
+              ],
+              "sha256": "a5de6a9b45558ca0c4617044b9e8e9a6d76e4b54438f648e72b5462c112eba4c"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                704,
+                388,
+                1009,
+                770
+              ],
+              "sha256": "5c5998659ebd74ccd08c8ac8075d7ac76939656e6a45e9fe6ba94914244b36c3"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                41,
+                769,
+                349,
+                1150
+              ],
+              "sha256": "49cabf9823c78711c515817db1d295dcda581cc0e31e2c6515ad3b4529aac96c"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                358,
+                768,
+                663,
+                1150
+              ],
+              "sha256": "0fd243a4236f141f062a12e1b8272ba6d298fdb742d86478ce1879608eabb619"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                705,
+                769,
+                1006,
+                1150
+              ],
+              "sha256": "c27b6b0c6a44d0778db8c1c1bcb916fbca068294dca20acdfa68d7b6d06e7189"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/10.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                44,
+                1150,
+                349,
+                1532
+              ],
+              "sha256": "05ca001680894446697b5fbda067f90fbbad19b91159f9b2b353655010d9eade"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/11.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                360,
+                1149,
+                667,
+                1533
+              ],
+              "sha256": "cd83f5f3aa59f152977e9fc04932002ddc63d90c8eebf0f7f7f0e4ccae658bf4"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/idle/12.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                705,
+                1150,
+                1005,
+                1531
+              ],
+              "sha256": "16d010322946f8f05a08fd34e2082e0d41d2bc46e236f451ed5ff8b89bdc0489"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8715789473684211
+        },
+        {
+          "id": "walk",
+          "name": "行走",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 750,
+          "atlas": "atlases/swordsman-luqinglan-walk.png",
+          "gifPreview": "previews/swordsman-luqinglan-walk.gif",
+          "frames": [
+            {
+              "file": "frames/swordsman-luqinglan/walk/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                109,
+                110,
+                318,
+                440
+              ],
+              "sha256": "79deb781c20fe72734b0cec80d701bd2ab32621d631310c3c9186e21ac1644d8"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/walk/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                610,
+                111,
+                813,
+                440
+              ],
+              "sha256": "a864b4df8eef916560df8eed9ba8617594ddbfaa437d4e027ee4fec9b406d10b"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/walk/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1107,
+                111,
+                1310,
+                439
+              ],
+              "sha256": "c8ce2995805f8afd65984204f6f579bec03549ec2a1734391841115a5d097c4b"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/walk/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                104,
+                622,
+                315,
+                951
+              ],
+              "sha256": "1ab01589dcdbe181ed6a8dd9a04114f3c57b9bf386c7f88cad74c298f158e903"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/walk/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                598,
+                621,
+                812,
+                952
+              ],
+              "sha256": "7ceeede3f8997ac8b360a6382b61ce6f4726ee79ea69cafa83fb36bc4d17322b"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/walk/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1102,
+                622,
+                1314,
+                952
+              ],
+              "sha256": "3d4f42f1dfbf31c871aea72678f2a25f251d19bd5dbc12c78220f5597d0184cd"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/walk/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                130,
+                1134,
+                427,
+                1464
+              ],
+              "sha256": "992426b4caad7a2dccce9893d3eade483460c84d923b88bc32f4d5518ba24fd8"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/walk/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                640,
+                1134,
+                904,
+                1464
+              ],
+              "sha256": "37a09373ff7b24548e8a800d575ef9c3202ea3f95c28c5ef32f7713c75af9b6a"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/walk/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1127,
+                1134,
+                1418,
+                1464
+              ],
+              "sha256": "f4ebabe346f50bfde461f62bf6cd45a3c3964958d848ddec60ae8c7bc3c9120a"
+            }
+          ],
+          "sourceSize": [
+            1536,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            3
+          ],
+          "uniformScale": 1.0036363636363637
+        },
+        {
+          "id": "attack",
+          "name": "普通攻击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/swordsman-luqinglan-attack.png",
+          "gifPreview": "previews/swordsman-luqinglan-attack.gif",
+          "frames": [
+            {
+              "file": "frames/swordsman-luqinglan/attack/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                42,
+                8,
+                326,
+                408
+              ],
+              "sha256": "9d4e07fc49cc740950186e0d60daa84d12e21256ef5cb0e62db5f778efbd5291"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                372,
+                10,
+                654,
+                408
+              ],
+              "sha256": "debc3a73ef3290245152d9b0ef9b38d62af2a8c2112e1f78f29e7c11b428b9cf"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                720,
+                10,
+                996,
+                408
+              ],
+              "sha256": "c41b2c210257a5aa159a0af934c60bf0f3a268f9dc302aa641933e89c488fa92"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                46,
+                411,
+                348,
+                769
+              ],
+              "sha256": "eea326731cfd0de4f550eb027804cfec0e86c00a4da19a263c28ca360338f2d0"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                384,
+                413,
+                672,
+                774
+              ],
+              "sha256": "ac77c86b19bdb0b235af4a2608fbc44c3290c53ae5c377045c7766b2f0702b1d"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                702,
+                417,
+                1020,
+                774
+              ],
+              "sha256": "cd5d70b53756e82d95c4c5340732383333e1e36c8a455d46458406d2dfa1756f"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                40,
+                767,
+                414,
+                1101
+              ],
+              "sha256": "136f235608e150989153a61c274322745648118caf9205daf36e0e7fb0f11d31"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                403,
+                767,
+                682,
+                1113
+              ],
+              "sha256": "38d8f4bccd12423458a6d759a1469b946e201ba70a0330f44bebe536f9d8fe66"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                718,
+                769,
+                998,
+                1117
+              ],
+              "sha256": "96d5f9405a162f69312cd6656b80e8d38860261a2445a63265268034358360ac"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                46,
+                1112,
+                334,
+                1521
+              ],
+              "sha256": "e9c386791e5f3219cd27fac396c64be970210cb44b0eb226148a5af70c171a29"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                371,
+                1113,
+                653,
+                1522
+              ],
+              "sha256": "281ca6cf31400a7313b902dc940459861677144e19c03421bf3101eda6ba1fa4"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/attack/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                723,
+                1114,
+                1001,
+                1521
+              ],
+              "sha256": "8eee49c355b4927e6d6b5a656a0c0874fbf82db499d3afac0a4e5e0dd4d7fd3c"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8342569269521412
+        },
+        {
+          "id": "cast",
+          "name": "施法",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/swordsman-luqinglan-cast.png",
+          "gifPreview": "previews/swordsman-luqinglan-cast.gif",
+          "frames": [
+            {
+              "file": "frames/swordsman-luqinglan/cast/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                37,
+                6,
+                316,
+                389
+              ],
+              "sha256": "1169dbab9ebf02b2e4acd01fb7afa43938a2f701b73b77747b6087792d0bf251"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                357,
+                6,
+                652,
+                389
+              ],
+              "sha256": "ff109de39bf746c4f93c771bf45100ed6a9fd18ba1669a20386277c7c00435e5"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                678,
+                7,
+                989,
+                389
+              ],
+              "sha256": "6c72861ab8ddbb843cf0bdb0e667e091faa4e7c71b6cfe5aefd9a9d0a62e7400"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                6,
+                392,
+                357,
+                766
+              ],
+              "sha256": "e4e69063c17ada51011d182428ff311bda21fabcad0754722bd05d44dae435b5"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                343,
+                390,
+                674,
+                766
+              ],
+              "sha256": "7a4ae94456160886446aaea9c32da521aed2fbafddadc287fd4705a8fca87545"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                669,
+                391,
+                1005,
+                765
+              ],
+              "sha256": "0a574bde0e7df3302026f13dd15a6dfde1313253650d676cca27f9f9af8065eb"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                6,
+                771,
+                345,
+                1149
+              ],
+              "sha256": "a6fcbda291012f6beb969561fe6adaee9f33a4968d5cdcfeb2710d92ce333f51"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                339,
+                770,
+                664,
+                1148
+              ],
+              "sha256": "0ad6849640d4f3155714fa803981f7db3eb6c1abf768fe8b469a887ecf7ddba2"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                660,
+                774,
+                1016,
+                1149
+              ],
+              "sha256": "74bb4d4d8c9e0763c613574f87017aced76ca26fd5f1af7be977c1741d12afc4"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                11,
+                1152,
+                356,
+                1524
+              ],
+              "sha256": "9d00c192beb9c3b322f69c99beb18b8351a9134d25c36cc10962647f02edd13e"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                368,
+                1151,
+                662,
+                1529
+              ],
+              "sha256": "279373edaba7752eca641f0932be76c62c4053261ed45a0bd33ba8ce575a6e59"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/cast/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                699,
+                1151,
+                995,
+                1528
+              ],
+              "sha256": "baef5727e75db1086986f347e3ca7a2cf6c52128ba9ce8b390a86af923704d1a"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8808510638297872
+        },
+        {
+          "id": "hit",
+          "name": "受击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/swordsman-luqinglan-hit.png",
+          "gifPreview": "previews/swordsman-luqinglan-hit.gif",
+          "frames": [
+            {
+              "file": "frames/swordsman-luqinglan/hit/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                40,
+                4,
+                333,
+                387
+              ],
+              "sha256": "71caed6036017878cb59682f989b3d0bf2253d58f46cd83f3f5f14279632d0b1"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                377,
+                5,
+                673,
+                385
+              ],
+              "sha256": "d9d4f0d10ca83257c197978b1f40aaf424c4535e8c9930b21bdd2c209e9b5297"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                683,
+                21,
+                1001,
+                387
+              ],
+              "sha256": "0026866959f7632f16feae3c797d360f1881c77b93fd748e76f609700b889e5a"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                40,
+                400,
+                368,
+                755
+              ],
+              "sha256": "b4bd65a4a780c58ba3e45e2c53a5a125f09305770cfbfdac1598c3687e735e4d"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                382,
+                400,
+                701,
+                752
+              ],
+              "sha256": "d0561379b8f4c911e9adcc9da0567aab44fb7fc014e5b2b8c85f2b9f0a709fc5"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                671,
+                424,
+                1010,
+                754
+              ],
+              "sha256": "6e6d6ceddc6e7db8939a673971bd4a6e2aa7719dc2c1ac48844fb97ebe8eef6d"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                47,
+                767,
+                372,
+                1140
+              ],
+              "sha256": "64fb5c59caa8dac442461b8df4fce44448f51d09ffe382ca7010093b35d393b5"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                371,
+                765,
+                687,
+                1139
+              ],
+              "sha256": "562f2ce235d6168d1a4050cb79492f98f52889ec539a50a432b14d60ebf1e5b2"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                707,
+                763,
+                1002,
+                1139
+              ],
+              "sha256": "6085d934afe775e61e662eb36467fffb4a9d71903a531db15ad7a359c5e2fbe9"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                48,
+                1141,
+                345,
+                1524
+              ],
+              "sha256": "2781ecc7907e8813bbc954c5d4cb9cc2d6af64afe44423280e5b25ebe03456e5"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                372,
+                1142,
+                672,
+                1524
+              ],
+              "sha256": "312e737a6618dc6b8bf133e4ca2c87ab3ad322e98e9c5a1c7ad6b2a1a226d135"
+            },
+            {
+              "file": "frames/swordsman-luqinglan/hit/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                690,
+                1141,
+                997,
+                1525
+              ],
+              "sha256": "b394bc82d3a7a3ce958b0b62918eb6d7d98d99f530cc41e8e8404e3fba65d82a"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8808510638297872
+        }
+      ]
+    },
+    {
+      "id": "saber-hanpoyue",
+      "name": "韩破岳",
+      "profession": "刀客",
+      "version": 3,
+      "frameSize": [
+        512,
+        512
+      ],
+      "pivot": {
+        "x": 256,
+        "y": 440
+      },
+      "reference": "../cast-v5/saber-hanpoyue.png",
+      "view": "three-quarter front/right",
+      "method": "whole-figure sprite frames; uniform scaling only, no skeletal reconstruction or body warping",
+      "fit": 0.8,
+      "clips": [
+        {
+          "id": "idle",
+          "name": "待机",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 750,
+          "atlas": "atlases/saber-hanpoyue-idle.png",
+          "gifPreview": "previews/saber-hanpoyue-idle.gif",
+          "frames": [
+            {
+              "file": "frames/saber-hanpoyue/idle/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                24,
+                9,
+                333,
+                425
+              ],
+              "sha256": "5feb4820a5e9f2d1af541017255177f7f0c69a9d43cee29f15297607d9da7714"
+            },
+            {
+              "file": "frames/saber-hanpoyue/idle/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                344,
+                10,
+                672,
+                425
+              ],
+              "sha256": "4cba89951f8c9e8f2741ba9b35635cfb8c49fd944a54b8fb52728ea5aeb16d80"
+            },
+            {
+              "file": "frames/saber-hanpoyue/idle/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                677,
+                10,
+                1009,
+                426
+              ],
+              "sha256": "8549fa169e188de64d597bc44870bf049fb46d474acde47a79e6e7dfd4810856"
+            },
+            {
+              "file": "frames/saber-hanpoyue/idle/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                19,
+                422,
+                370,
+                837
+              ],
+              "sha256": "7357fa903038eae1a0cda8562390dcd8bac607987362560fb94102ed9e7a01ae"
+            },
+            {
+              "file": "frames/saber-hanpoyue/idle/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                343,
+                422,
+                697,
+                838
+              ],
+              "sha256": "c5c95742d6fbf34496c214f485c171e27094b6bdc68e47e5485e6d4637dbd1d8"
+            },
+            {
+              "file": "frames/saber-hanpoyue/idle/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                677,
+                423,
+                1011,
+                838
+              ],
+              "sha256": "2c25e893c2d2ea03b423beace9029ea88e53ed99f74f994ea33804fff1de2f86"
+            },
+            {
+              "file": "frames/saber-hanpoyue/idle/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                22,
+                838,
+                331,
+                1266
+              ],
+              "sha256": "f888a01bc53bfcb0a2bbcaefbefdc0da5833187f869951a7d880bd58ac84cdbf"
+            },
+            {
+              "file": "frames/saber-hanpoyue/idle/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                342,
+                838,
+                667,
+                1283
+              ],
+              "sha256": "3857192e7a0bbc80a46f8e7c45d28cc8cfe54b908082774182105ac29d9d2fb2"
+            },
+            {
+              "file": "frames/saber-hanpoyue/idle/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                676,
+                838,
+                995,
+                1270
+              ],
+              "sha256": "92bc2960c9438d5a5ab903280a479aa5a367752ad05113ca8de4382b994b984e"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            3
+          ],
+          "uniformScale": 0.8
+        },
+        {
+          "id": "walk",
+          "name": "行走",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 750,
+          "atlas": "atlases/saber-hanpoyue-walk.png",
+          "gifPreview": "previews/saber-hanpoyue-walk.gif",
+          "frames": [
+            {
+              "file": "frames/saber-hanpoyue/walk/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                45,
+                106,
+                316,
+                440
+              ],
+              "sha256": "5a6315619efb43aeb10abc50a892084cc1212bf1e664f64919e8955b349b0a84"
+            },
+            {
+              "file": "frames/saber-hanpoyue/walk/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                557,
+                105,
+                827,
+                439
+              ],
+              "sha256": "54bec267adfe468fad413be5927d8de87fe7bb1b00d30a7f92137efb5266c7a2"
+            },
+            {
+              "file": "frames/saber-hanpoyue/walk/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1071,
+                106,
+                1327,
+                440
+              ],
+              "sha256": "fc05f40147cfbee44f32023c1a8cc32fcb4502fba0bfa7619f2a05ea96c8eb10"
+            },
+            {
+              "file": "frames/saber-hanpoyue/walk/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                62,
+                621,
+                319,
+                952
+              ],
+              "sha256": "11b4affa66e3fe34d75e76d19f4693b0555aefad5ab9ff7a9cbe7932562d927d"
+            },
+            {
+              "file": "frames/saber-hanpoyue/walk/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                578,
+                624,
+                822,
+                952
+              ],
+              "sha256": "19077852bb44251229eb256200b44a0cff30088c1b417a54debe35809179cb7d"
+            },
+            {
+              "file": "frames/saber-hanpoyue/walk/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1067,
+                623,
+                1337,
+                951
+              ],
+              "sha256": "17a4d0031f0d460f656d7947c1d8ac1aefb4f0de1d179b01a29092cf5c8948a1"
+            },
+            {
+              "file": "frames/saber-hanpoyue/walk/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                113,
+                1133,
+                403,
+                1464
+              ],
+              "sha256": "a8c5e36f1a179667150b11f1bdbf550c469f8e42a94a4c110e4554b48ff18e17"
+            },
+            {
+              "file": "frames/saber-hanpoyue/walk/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                620,
+                1134,
+                878,
+                1464
+              ],
+              "sha256": "fe02eff7f5b5ed9572592b16abcd5262ee5aac53cf8ed3acfb8c813148eb6447"
+            },
+            {
+              "file": "frames/saber-hanpoyue/walk/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1094,
+                1133,
+                1426,
+                1464
+              ],
+              "sha256": "d4008b7c7bb39b5740b30c2b55978680d3908d1ff8cd55c696f30f3a884f5b96"
+            }
+          ],
+          "sourceSize": [
+            1536,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            3
+          ],
+          "uniformScale": 1.0006042296072508
+        },
+        {
+          "id": "attack",
+          "name": "普通攻击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/saber-hanpoyue-attack.png",
+          "gifPreview": "previews/saber-hanpoyue-attack.gif",
+          "frames": [
+            {
+              "file": "frames/saber-hanpoyue/attack/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                169,
+                112,
+                439,
+                442
+              ],
+              "sha256": "a83cfa94be307bdd8149665701adc88d3457dc17bf93e83c7f64c504c2009a02"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                667,
+                109,
+                931,
+                440
+              ],
+              "sha256": "f30b785df7c9068a8e358c00de728033526b14e6740a2099fa1c54013f29cc4a"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1186,
+                107,
+                1413,
+                440
+              ],
+              "sha256": "5088f352ae065486baf2f50893442ceec7cfa5c6c0064f7efac41f346a8072a9"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                196,
+                625,
+                442,
+                950
+              ],
+              "sha256": "6307372d6cbd39db54bcfe0efc2834e38a848435c75f48e1a0d5107124143a6a"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                672,
+                633,
+                972,
+                952
+              ],
+              "sha256": "1cb2be825c8c112ebe1d65d19fec2d6addd2e210d1c5a6a52bc9a00fe479cbb3"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1161,
+                639,
+                1467,
+                952
+              ],
+              "sha256": "39df96e640b6508405cc1f4a224cc237cc4f5c262b151d485e9b43d6f4488cf4"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                135,
+                1133,
+                434,
+                1464
+              ],
+              "sha256": "d2b60ae3718c5387df3e7c385e5aee76301b0c2e5eb01f4183007da434abb165"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                672,
+                1133,
+                979,
+                1464
+              ],
+              "sha256": "a92dd9cc066d055c22c44980ed9dd25b3d01f9d74af28cefca2b856ef39bbb9f"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1217,
+                1133,
+                1405,
+                1464
+              ],
+              "sha256": "9bc05b1f2442c192922067c9cb3da683a609a47c5cd67ec11b2ee6cd7a5610c1"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                162,
+                1635,
+                439,
+                1977
+              ],
+              "sha256": "b23b92a2994b099f9d6a42c2838b0db1525e2a3aacd03a061bc5c07c8bef4600"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                659,
+                1633,
+                930,
+                1976
+              ],
+              "sha256": "427cf05bfdfa57bb91c7f195f89dbc962994e6c08a70068a3d317a0e20a49d7b"
+            },
+            {
+              "file": "frames/saber-hanpoyue/attack/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1157,
+                1632,
+                1423,
+                1977
+              ],
+              "sha256": "f57b37ccf8cabdfefcf0cef6e84acb0f6b3dede8e715a32c8afe3dba085ca653"
+            }
+          ],
+          "sourceSize": [
+            1536,
+            2048
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 1.0006042296072508
+        },
+        {
+          "id": "cast",
+          "name": "施法",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/saber-hanpoyue-cast.png",
+          "gifPreview": "previews/saber-hanpoyue-cast.gif",
+          "frames": [
+            {
+              "file": "frames/saber-hanpoyue/cast/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                41,
+                2,
+                337,
+                413
+              ],
+              "sha256": "f21c1d93cb32345585af0968b16f7a7161cdd5f885baafa289f2d3532306ad15"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                345,
+                2,
+                661,
+                412
+              ],
+              "sha256": "df73fc7104c7880e8e924818636cf014489d21c00eba9ef91f20e7bf63e0b97e"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                723,
+                16,
+                1007,
+                413
+              ],
+              "sha256": "0af681af3d1ee546244592f13bfe61d533436818d011296d5d7ce8f71d1d9868"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                67,
+                415,
+                357,
+                780
+              ],
+              "sha256": "bc6f626d2b53840e2f0247b732a2e168dc5bb65a0d1ea2066367d7f6ae1c9a72"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                389,
+                410,
+                670,
+                779
+              ],
+              "sha256": "c2046e9f1fda7b4e98c1f963fec36f6b8031e3a94f0412e61ec7333a1555b59e"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                727,
+                408,
+                1005,
+                779
+              ],
+              "sha256": "bf9a822db545ac59b9b91ff7e069f4ee6841ef859be637a47c83ccfda8428eef"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                80,
+                770,
+                377,
+                1131
+              ],
+              "sha256": "c001fe9d00dbea02e730ac54f73cd77acabfbf45664c19c441324db4b33f30cb"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                389,
+                770,
+                687,
+                1132
+              ],
+              "sha256": "2c8668032f387f2dac6aa6e740a6dd5b9ac7659781964aac6564b2534d69d048"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                710,
+                777,
+                1013,
+                1132
+              ],
+              "sha256": "2443d677bdfe35d362b3113cd7441454eff6c64226e3b7e6dcdf04b11e388340"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                18,
+                1122,
+                337,
+                1526
+              ],
+              "sha256": "c1a7baf42d74d3a0e3a23890a48872c3817891e46c072549d5c9688df8529122"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                352,
+                1120,
+                657,
+                1526
+              ],
+              "sha256": "f9e427415a1f13702695286cbf02dc888eef56ff876c72191febb6ac39005157"
+            },
+            {
+              "file": "frames/saber-hanpoyue/cast/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                689,
+                1121,
+                988,
+                1527
+              ],
+              "sha256": "bc6202df86577de8ef60654a8c8c23e9de8041f3e69c0f5dd499b5f7d7d6bd95"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8363636363636364
+        },
+        {
+          "id": "hit",
+          "name": "受击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/saber-hanpoyue-hit.png",
+          "gifPreview": "previews/saber-hanpoyue-hit.gif",
+          "frames": [
+            {
+              "file": "frames/saber-hanpoyue/hit/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                6,
+                3,
+                325,
+                386
+              ],
+              "sha256": "c8179886a53e6da4a184823008d0b603d182afdad778146d29c8d9a8068c6ca0"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                344,
+                2,
+                673,
+                382
+              ],
+              "sha256": "01a129c9fcd1dbabae34d99b4faa9d39b410497f2dad7346d711cd0ac2b4cae7"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                670,
+                32,
+                1013,
+                384
+              ],
+              "sha256": "4b3cb2a3be5f9679666080ed82e7bde89fd850c78b182d71223d8ab5b0f6831a"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1,
+                387,
+                364,
+                761
+              ],
+              "sha256": "a17fc5e24cc02a54326ad359b59de46abeeb4b0c7a585c779e7de88d3b37d6d2"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                410,
+                405,
+                699,
+                760
+              ],
+              "sha256": "d6984c8425e7425e28bdeb2511a3cec0d36260c00bccc497567ef7e1425456ce"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                745,
+                401,
+                1014,
+                761
+              ],
+              "sha256": "76e98cf9b21b7be3e8ecb6824efa54d28bd4dedff38457505efff7efa2d01cef"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                12,
+                761,
+                350,
+                1138
+              ],
+              "sha256": "690e9bc6b0a465cc0340ae8cf1ddbf7ae5e3d02ae6580ed7fa288c0f86ffbecb"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                352,
+                756,
+                683,
+                1137
+              ],
+              "sha256": "c5fe7f8dc6fb8d34a6312d4f3288202220b6b80e8209680c2722faf76facce95"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                693,
+                756,
+                1011,
+                1138
+              ],
+              "sha256": "b745c995ca713d5047bb8bda6459fb42ec06aaf9a9983bbfc673abeeb4183d43"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                11,
+                1138,
+                341,
+                1522
+              ],
+              "sha256": "a47b156f6bd40fe2906d83f8a333ad2994a4d22cb03a5fddda24665865f2977f"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                345,
+                1138,
+                690,
+                1523
+              ],
+              "sha256": "2f153a4bbc5bc2481a937d8e207254f1ccb323a6da00c23e6dc1ad4a77a4c30c"
+            },
+            {
+              "file": "frames/saber-hanpoyue/hit/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                688,
+                1138,
+                1013,
+                1522
+              ],
+              "sha256": "cf1c2e82d181d992e6b959dd945455820d9877cde0cb4902221f4ef66252ce3e"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8715789473684211
+        }
+      ]
+    },
+    {
+      "id": "assassin-xieqian",
+      "name": "谢潜",
+      "profession": "刺客",
+      "version": 3,
+      "frameSize": [
+        512,
+        512
+      ],
+      "pivot": {
+        "x": 256,
+        "y": 440
+      },
+      "reference": "../cast-v5/assassin-xieqian.png",
+      "view": "three-quarter front/right",
+      "method": "whole-figure sprite frames; uniform scaling only, no skeletal reconstruction or body warping",
+      "fit": 0.6983909619993154,
+      "clips": [
+        {
+          "id": "idle",
+          "name": "待机",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 750,
+          "atlas": "atlases/assassin-xieqian-idle.png",
+          "gifPreview": "previews/assassin-xieqian-idle.gif",
+          "frames": [
+            {
+              "file": "frames/assassin-xieqian/idle/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                22,
+                13,
+                327,
+                429
+              ],
+              "sha256": "4fe888f5f8b3584850e35290e252d41d75f97dbd71742a201ef8325605ec7663"
+            },
+            {
+              "file": "frames/assassin-xieqian/idle/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                352,
+                13,
+                671,
+                428
+              ],
+              "sha256": "6960186e95927a58388d145ab56dc850954dc971d6e8b06e079db8589997057a"
+            },
+            {
+              "file": "frames/assassin-xieqian/idle/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                696,
+                13,
+                1001,
+                428
+              ],
+              "sha256": "03d5089999aa85d156683804d5fb989724300f939d50110b8195f75c65c86284"
+            },
+            {
+              "file": "frames/assassin-xieqian/idle/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                14,
+                426,
+                341,
+                836
+              ],
+              "sha256": "cd9ef0ab9521d70321cbaa791a501e12ce8c06f243426f49ef69b1396aa68365"
+            },
+            {
+              "file": "frames/assassin-xieqian/idle/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                350,
+                427,
+                682,
+                836
+              ],
+              "sha256": "9563a2840a1e2255d4c209391f367009a3e3574d0fdd398bb34ede57aacbd035"
+            },
+            {
+              "file": "frames/assassin-xieqian/idle/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                695,
+                427,
+                1012,
+                836
+              ],
+              "sha256": "188600f955ce1a43219e252c5ad993c66ac7028042d2285f8166650046d2e34b"
+            },
+            {
+              "file": "frames/assassin-xieqian/idle/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                17,
+                831,
+                330,
+                1229
+              ],
+              "sha256": "6d3de2a23678f992e8e8cf0181e997dda5de927c9b0840023de8abac0c5acf56"
+            },
+            {
+              "file": "frames/assassin-xieqian/idle/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                356,
+                831,
+                667,
+                1229
+              ],
+              "sha256": "242cccb407758abab939fe4a7dbea2525654c4ef09505340160a3418cbfecd3e"
+            },
+            {
+              "file": "frames/assassin-xieqian/idle/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                696,
+                831,
+                1003,
+                1229
+              ],
+              "sha256": "5fc64f26619578ab560b4e935c89d6def90660e49d0270b0570b7ac6c89941c6"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            3
+          ],
+          "uniformScale": 0.7086614173228347
+        },
+        {
+          "id": "walk",
+          "name": "行走",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 750,
+          "atlas": "atlases/assassin-xieqian-walk.png",
+          "gifPreview": "previews/assassin-xieqian-walk.gif",
+          "frames": [
+            {
+              "file": "frames/assassin-xieqian/walk/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                60,
+                145,
+                311,
+                439
+              ],
+              "sha256": "7572f64a54fbc5bbc968e28fb03c6f8685be97a5b89ca2cad1223b139c9ba890"
+            },
+            {
+              "file": "frames/assassin-xieqian/walk/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                562,
+                146,
+                810,
+                442
+              ],
+              "sha256": "8666f1762ddf6edfe815b6a24466a6187ad2b17b587edc002d12217779c81d53"
+            },
+            {
+              "file": "frames/assassin-xieqian/walk/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1074,
+                146,
+                1327,
+                439
+              ],
+              "sha256": "f81422ce84cc45b9d389294f1d7906a087d0a3d2bf822fe9f5081ad49a03da19"
+            },
+            {
+              "file": "frames/assassin-xieqian/walk/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                69,
+                665,
+                318,
+                951
+              ],
+              "sha256": "2456c1521bd8e0ecb308adaa89d278962bc9fbe28b80eada45ae72a3488eddb5"
+            },
+            {
+              "file": "frames/assassin-xieqian/walk/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                575,
+                669,
+                814,
+                952
+              ],
+              "sha256": "bb4947e0e27f0ecea840b73ba93be0035fae44f031407b5b0b8a3ca55a8b6642"
+            },
+            {
+              "file": "frames/assassin-xieqian/walk/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1077,
+                670,
+                1327,
+                951
+              ],
+              "sha256": "c8c46fe55f929c437b06b35b9374fd695b4afb4ca6e95b9e365b4e884caa71c6"
+            },
+            {
+              "file": "frames/assassin-xieqian/walk/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                124,
+                1134,
+                458,
+                1464
+              ],
+              "sha256": "561ce34e3c2a156a7b4aa931f0aaf0557f3b4752d3622db7f8446605a844bf3e"
+            },
+            {
+              "file": "frames/assassin-xieqian/walk/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                646,
+                1134,
+                930,
+                1464
+              ],
+              "sha256": "2bb9dea893dd01e4af04e5dbe245d4742e22f428f064f1e6e58bc3b561311b12"
+            },
+            {
+              "file": "frames/assassin-xieqian/walk/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1143,
+                1134,
+                1427,
+                1464
+              ],
+              "sha256": "5fb8450ac9b1b0bd7403d85c4cab32462f9a031736a51594bd20e6038fcd86a3"
+            }
+          ],
+          "sourceSize": [
+            1536,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            3
+          ],
+          "uniformScale": 0.98344849750924
+        },
+        {
+          "id": "attack",
+          "name": "普通攻击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/assassin-xieqian-attack.png",
+          "gifPreview": "previews/assassin-xieqian-attack.gif",
+          "frames": [
+            {
+              "file": "frames/assassin-xieqian/attack/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                26,
+                6,
+                316,
+                411
+              ],
+              "sha256": "a48e149ad86256cb34ce5bdb6a461e9a3a4814a56db1ee3fee0addde418fcecf"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                363,
+                12,
+                669,
+                407
+              ],
+              "sha256": "7ceab72309ae27212e2e70127330edd8ea4c691420f63b95c287adcf9e648d8e"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                696,
+                56,
+                1020,
+                405
+              ],
+              "sha256": "ebe653d882f5089004be58f1a493ff687153829c79097e09e671cf4f070417b2"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                6,
+                432,
+                321,
+                772
+              ],
+              "sha256": "bc6269446530b4fe5ccd7434ba39a07e35bf85c782133ae6a6ff4795953af274"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                327,
+                411,
+                705,
+                772
+              ],
+              "sha256": "ed991fb58036ce43b56733eafd3abc1a41861463fb6f39fb65bb5d0258581682"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                656,
+                426,
+                1020,
+                771
+              ],
+              "sha256": "80b93479abe968cbf5524c47e2e410b2ee60871ab28084739143927cfd06106b"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                10,
+                778,
+                355,
+                1133
+              ],
+              "sha256": "ced9388a22af3f2895fb182695e283ef764c7c0054781767c9c3db22d1eef196"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                355,
+                786,
+                690,
+                1134
+              ],
+              "sha256": "25b8aaf83b560269c6943dcbe714079756a4ce06a7b5891517fd4c44badf9edc"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                697,
+                781,
+                1020,
+                1134
+              ],
+              "sha256": "608fea125824a3890f0fbdf054564743dd559ccae91a81feb9b87711298eae76"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                16,
+                1138,
+                333,
+                1525
+              ],
+              "sha256": "5a0760f1339dab2d8f33a3aba5db3793c2426bc4d644d19f5ed293e414cd3f52"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                361,
+                1136,
+                664,
+                1527
+              ],
+              "sha256": "6e727e6042337329a3e0f0596765798aa94de31386f716c821f1814d044ed004"
+            },
+            {
+              "file": "frames/assassin-xieqian/attack/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                696,
+                1132,
+                996,
+                1526
+              ],
+              "sha256": "84795df6fd43e1da4d03dc69b5e73a0de37079619613f6b81e77a6d778c80ccc"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8031496062992126
+        },
+        {
+          "id": "cast",
+          "name": "施法",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/assassin-xieqian-cast.png",
+          "gifPreview": "previews/assassin-xieqian-cast.gif",
+          "frames": [
+            {
+              "file": "frames/assassin-xieqian/cast/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                33,
+                9,
+                320,
+                408
+              ],
+              "sha256": "c65436e23f6979418f87c861e4b302dabdaf83775584544aaa07a4391fd272ad"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                361,
+                10,
+                660,
+                412
+              ],
+              "sha256": "d5549a7780a623a6100152302bc99d368631e21a65ecbc0067196db79edb6a2a"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                684,
+                46,
+                1007,
+                411
+              ],
+              "sha256": "472599799d313df4d75eb3810ee3298831081c7dbbfeb7b80b818a0341153b64"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                14,
+                421,
+                340,
+                782
+              ],
+              "sha256": "6b6b6d068fdb460c464becbadbe1b194ce22232ab3766ab28575d740ff60c7bc"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                345,
+                431,
+                673,
+                771
+              ],
+              "sha256": "d03faf2730f7f5c54048f30e8ccf1228e1fa395ece64b4efd0c013ba09d5c18b"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                684,
+                431,
+                1016,
+                775
+              ],
+              "sha256": "a280a2dd7bdbf3b7340268ecc5921891c02b42b41caf0cc218a52df272ff6356"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                16,
+                807,
+                360,
+                1139
+              ],
+              "sha256": "472f31a078ce9532d95b042b22820d44e3821d4c101013d32522ed0b5148dc30"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                353,
+                792,
+                677,
+                1137
+              ],
+              "sha256": "47e06471c449bd423ff3920cc2f6c340c9e567610884967bf0864bf36b2d129c"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                684,
+                778,
+                1013,
+                1142
+              ],
+              "sha256": "a9b232244995074732855c6f841f2a17ab50b6e50306f561bf03d49ee51fe0db"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                22,
+                1135,
+                320,
+                1525
+              ],
+              "sha256": "28513c03fecb2f1329b389ba65efd944ea9c2d734f11a16251c1ddede84d8efa"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                349,
+                1135,
+                663,
+                1526
+              ],
+              "sha256": "53e5755dc1fcc08220bdb57048d802cc0c92f5b5ae2d9ce4dbb82432ca4e5559"
+            },
+            {
+              "file": "frames/assassin-xieqian/cast/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                699,
+                1132,
+                994,
+                1524
+              ],
+              "sha256": "09fda44a7a3c3798714d6343d9ccfbeebbca4dcf5aabdf3190f593cc2fa3e3f6"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.796512006247153
+        },
+        {
+          "id": "hit",
+          "name": "受击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/assassin-xieqian-hit.png",
+          "gifPreview": "previews/assassin-xieqian-hit.gif",
+          "frames": [
+            {
+              "file": "frames/assassin-xieqian/hit/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                29,
+                7,
+                334,
+                398
+              ],
+              "sha256": "9860a38e5e90aaac7710b7a33c9655c0a6338788a36f98e22202a617b20dfd10"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                355,
+                3,
+                656,
+                398
+              ],
+              "sha256": "da54213fb8c17e0f23da2d0c240d4c85aa957a13a9ac0789c7b0dfb1f9b03572"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                682,
+                5,
+                1013,
+                398
+              ],
+              "sha256": "3a7e2d811ac487af79545c20f1e5dd815e1ce1600f0645c1a6d2c97b05cf8488"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                23,
+                394,
+                354,
+                769
+              ],
+              "sha256": "c3a53dbd22154472f3ab36c8247c88d03a4f0bdafd0b7aec4b21179dd9b128a8"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                365,
+                406,
+                705,
+                769
+              ],
+              "sha256": "1cede90402d5b26a59dcf184a699f7c33c887faa587fe1a7eacfa5c474b0b899"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                706,
+                407,
+                1009,
+                769
+              ],
+              "sha256": "7f468bc2b4aa7a54885f65fde0907880da92aecb068ada5eb817ed24f25d839f"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                36,
+                769,
+                356,
+                1143
+              ],
+              "sha256": "28972013b4083bebf38866954db14739bfc29b79b6625a77245b36c889cc82e3"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                368,
+                768,
+                689,
+                1143
+              ],
+              "sha256": "7b6bdf51dbbee2bf33e9e204b6b8c49d711a641b62ffc3cb08c98cafdbcbe792"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                704,
+                769,
+                1004,
+                1143
+              ],
+              "sha256": "b9f089753ad21be0ba473d8a5da5435d603f565b99ce88fc9856cc1a6083dcde"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                24,
+                1136,
+                338,
+                1525
+              ],
+              "sha256": "feea88b7f7754ac7fd2e935f04af8d9f5061517c6445e53c413b23d1f6c5c4dc"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                349,
+                1136,
+                663,
+                1525
+              ],
+              "sha256": "52b1ff1455d5b9f343b7a47445159806d4a02bba8056c6f822287d5a06e989c4"
+            },
+            {
+              "file": "frames/assassin-xieqian/hit/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                687,
+                1138,
+                1005,
+                1526
+              ],
+              "sha256": "0b2c9de4ed4a5cebfe550b0ed9e43c4bc428617a0ff29c1bcdb1c0feef880a04"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.7471159128364768
+        }
+      ]
+    },
+    {
+      "id": "mage-suyingyue",
+      "name": "苏映月",
+      "profession": "法师",
+      "version": 3,
+      "frameSize": [
+        512,
+        512
+      ],
+      "pivot": {
+        "x": 256,
+        "y": 440
+      },
+      "reference": "../cast-v5/mage-suyingyue.png",
+      "view": "three-quarter front/right",
+      "method": "whole-figure sprite frames; uniform scaling only, no skeletal reconstruction or body warping",
+      "fit": 0.8,
+      "clips": [
+        {
+          "id": "idle",
+          "name": "待机",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 1000,
+          "atlas": "atlases/mage-suyingyue-idle.png",
+          "gifPreview": "previews/mage-suyingyue-idle.gif",
+          "frames": [
+            {
+              "file": "frames/mage-suyingyue/idle/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                54,
+                2,
+                343,
+                392
+              ],
+              "sha256": "3afb6e514cb224e1d8ffe4d9b6f1fdca1c07f5c229f448662977a325e092a1f0"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                368,
+                1,
+                658,
+                393
+              ],
+              "sha256": "b35463713d7a45a6d3901ce6e0d191542531d4dcd55dfc4996a56429d35e6237"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                682,
+                1,
+                974,
+                392
+              ],
+              "sha256": "093ab8307aa0b6c51a6bedeeb901397fd5659a522f3de46d1eb63b3c317dd32c"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                53,
+                384,
+                346,
+                775
+              ],
+              "sha256": "9197dd968162b8479882e45cc94fd54f4fa094e83ea4882314229f1919f54586"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                365,
+                384,
+                665,
+                775
+              ],
+              "sha256": "30b8070906cc2cb719fcdac2cf64d02937a987f23bbecf56d844897fdd3150f0"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                679,
+                385,
+                975,
+                775
+              ],
+              "sha256": "08ff23b26bb33b8d0aa095049ded920adf1b94254d9d7d4e954b44bce2207559"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                49,
+                768,
+                349,
+                1155
+              ],
+              "sha256": "7cc7fda78586969d2b7f6916fcdaa5ab827b07e65b2b5ac68e5cc975d3b10241"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                368,
+                769,
+                670,
+                1156
+              ],
+              "sha256": "fc3587a1f683dc14ae04e9541c4b8467450c4723711580dd5aaa0bbf225fe364"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                681,
+                769,
+                976,
+                1156
+              ],
+              "sha256": "025319efb6d23c40724920193273b33eb63460bf36c4075aa161672252a3bbb7"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/10.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                43,
+                1150,
+                349,
+                1535
+              ],
+              "sha256": "d82f394e779d3f1113be823baa3c87da8cfe1afcf56fa489b677bb5aab8b7a2f"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/11.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                369,
+                1148,
+                663,
+                1535
+              ],
+              "sha256": "75377efab678bd381cf3a42e7e3d47d8a862f3d1039bab5475add7cf7358edf3"
+            },
+            {
+              "file": "frames/mage-suyingyue/idle/12.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                688,
+                1151,
+                976,
+                1535
+              ],
+              "sha256": "90703266be17d91fcd4e2a4f1429eee4181690c79bfb2eddac9a15cc6e801daa"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8558139534883721
+        },
+        {
+          "id": "walk",
+          "name": "行走",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 750,
+          "atlas": "atlases/mage-suyingyue-walk.png",
+          "gifPreview": "previews/mage-suyingyue-walk.gif",
+          "frames": [
+            {
+              "file": "frames/mage-suyingyue/walk/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                104,
+                113,
+                293,
+                440
+              ],
+              "sha256": "ff872577825c86c89a9117ee391468f5b5bccf2e575c0b1217e58e8da3d86f07"
+            },
+            {
+              "file": "frames/mage-suyingyue/walk/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                618,
+                114,
+                800,
+                440
+              ],
+              "sha256": "82bb981a66173c198ae279b9db95e878374df5d3982d66222b78f26c2adc9b69"
+            },
+            {
+              "file": "frames/mage-suyingyue/walk/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1120,
+                115,
+                1304,
+                440
+              ],
+              "sha256": "13bd59e2c1c3d5607b4909d7bbbd5a09ff43ed2decef06091d6b011f013ea034"
+            },
+            {
+              "file": "frames/mage-suyingyue/walk/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                94,
+                624,
+                277,
+                951
+              ],
+              "sha256": "edd74c246e0c8eb857aa06e53bb49dc2c477bc7477d5fb1ccabd8269755d9dd6"
+            },
+            {
+              "file": "frames/mage-suyingyue/walk/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                614,
+                617,
+                806,
+                951
+              ],
+              "sha256": "276ccd5161868241ddc2b2367c279ebdb02a8672a3681e422fa08581f910cdc6"
+            },
+            {
+              "file": "frames/mage-suyingyue/walk/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1128,
+                619,
+                1331,
+                951
+              ],
+              "sha256": "9aadb48b6d555d3dc7dcb254a9533abb00fb557fd094412b657a75d3fce90818"
+            },
+            {
+              "file": "frames/mage-suyingyue/walk/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                118,
+                1134,
+                437,
+                1464
+              ],
+              "sha256": "78ae2085de267768c5e157dd750865b55486e2a7d498c3543079bd5101700f25"
+            },
+            {
+              "file": "frames/mage-suyingyue/walk/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                659,
+                1134,
+                931,
+                1464
+              ],
+              "sha256": "b72dcd3b383041d3a7fbc08705023c8a31f11cf1570ca7c24c2b71e76c5c7d98"
+            },
+            {
+              "file": "frames/mage-suyingyue/walk/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1149,
+                1134,
+                1427,
+                1464
+              ],
+              "sha256": "e04444dd22255a5ffc08e1546470626cb8d621e918f1bcb095b0cc6491476050"
+            }
+          ],
+          "sourceSize": [
+            1536,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            3
+          ],
+          "uniformScale": 1.0036363636363637
+        },
+        {
+          "id": "attack",
+          "name": "普通攻击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/mage-suyingyue-attack.png",
+          "gifPreview": "previews/mage-suyingyue-attack.gif",
+          "frames": [
+            {
+              "file": "frames/mage-suyingyue/attack/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                74,
+                6,
+                334,
+                397
+              ],
+              "sha256": "f60ec17c82fff1f77e4df7122f13e3378a4f9b5ff30a794dbeb6a111cacbf461"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                374,
+                10,
+                654,
+                398
+              ],
+              "sha256": "5e0275587eb216dfe571644a07c1f395127595b572fe21697a7b2a0abc54730b"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                684,
+                7,
+                992,
+                395
+              ],
+              "sha256": "ca0dec9764b8b698b454f104c2cb2959c08cd84ac534e470b66baf1ec5ffcc91"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                20,
+                387,
+                345,
+                779
+              ],
+              "sha256": "7015f95123a7dd36c8740c768134a36876e533bf9eeb0d255faa040dee31de52"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                357,
+                398,
+                676,
+                780
+              ],
+              "sha256": "02b9f1b95e988f91cb2ef7c6cf502f9fb70e43c6bbae54670d0b4b7ff4d8537b"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                675,
+                397,
+                1007,
+                781
+              ],
+              "sha256": "607c486b0523b009b35b2a829b359fe5d872e3c0fe9154eb310b79472059bf98"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                16,
+                771,
+                373,
+                1148
+              ],
+              "sha256": "65b707af1e64939d6eb74e96e233b7622edaa069c42152329d6b3258c6caeb45"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                379,
+                778,
+                695,
+                1150
+              ],
+              "sha256": "0021e2388b4fec2beb375e424c62015968872e28f36e14d6b6bcd066d0cfb8af"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                707,
+                778,
+                1004,
+                1151
+              ],
+              "sha256": "365a80bfdb656c0b2b4e2ff7e313fa130e84bbecb456d4e115fa043ab49f1374"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                78,
+                1138,
+                343,
+                1524
+              ],
+              "sha256": "bde6a95a737a808fab3d8d2481fc09a1296fef46f36fb005d18af7e6b5ef162a"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                386,
+                1139,
+                661,
+                1523
+              ],
+              "sha256": "f7eb66e57a6698fa00944c148eac5fde61345517cdfd87b634e7dec1c3ae7653"
+            },
+            {
+              "file": "frames/mage-suyingyue/attack/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                713,
+                1142,
+                981,
+                1524
+              ],
+              "sha256": "775b29b16f4f4456fe7a7c46c64ebe051c84f74a0f55eef3fd600229cee8e19b"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8647519582245432
+        },
+        {
+          "id": "cast",
+          "name": "施法",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/mage-suyingyue-cast.png",
+          "gifPreview": "previews/mage-suyingyue-cast.gif",
+          "frames": [
+            {
+              "file": "frames/mage-suyingyue/cast/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                51,
+                7,
+                337,
+                394
+              ],
+              "sha256": "73fa6c1be0175f41d151b0f459676d811c83082a1291702bd1bfab9cb37d514e"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                384,
+                5,
+                656,
+                394
+              ],
+              "sha256": "c315f1a64e10327b9c33f97a8c907dd3289502141ef7e90d223df10750e5049c"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                713,
+                8,
+                991,
+                394
+              ],
+              "sha256": "2eeae6721bab8d8afe3dd8ff2675c0728473a6fb46beaced579b787415aafbdc"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                52,
+                389,
+                356,
+                777
+              ],
+              "sha256": "198c59a10858a2583b2406c1243a9b4cb69b6641535b7a364726e05c19570cbb"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                377,
+                390,
+                701,
+                777
+              ],
+              "sha256": "360792f2b085d8c7b023738797195d2630d7222394e304b190639a5978e6734a"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                710,
+                389,
+                1011,
+                776
+              ],
+              "sha256": "c829243d614e1f54ab68396f1518dbbc994aa7387041a61225b5c99fd9db31a5"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                37,
+                772,
+                373,
+                1156
+              ],
+              "sha256": "ea39c5745b7b108f0751ba15742eac471a3bb0bca84d8b1e695df85cf56d6877"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                382,
+                772,
+                684,
+                1157
+              ],
+              "sha256": "c7ed20db7ef00d4831eb775369ae4d0e4ccee8ed0501c50f71f1648b262eea45"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                691,
+                770,
+                1016,
+                1156
+              ],
+              "sha256": "3168094a60f1de272207c0248dd7bd2601703d85d28ce61edf30503b0bc9b121"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                50,
+                1153,
+                353,
+                1535
+              ],
+              "sha256": "682160e67444093bf8603f70b0e333ba82e21dbce4e995ce7e3164be8e6e0c66"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                381,
+                1153,
+                661,
+                1535
+              ],
+              "sha256": "85ce0a54fa203c3a7b63761a62571c7d8d68a6ed935780041a2b93d1ac966265"
+            },
+            {
+              "file": "frames/mage-suyingyue/cast/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                702,
+                1154,
+                988,
+                1535
+              ],
+              "sha256": "dffb63556d1d1aa7d343af5872112ef7367ce037186e53118ed680fd0e5cf573"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8602597402597403
+        },
+        {
+          "id": "hit",
+          "name": "受击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/mage-suyingyue-hit.png",
+          "gifPreview": "previews/mage-suyingyue-hit.gif",
+          "frames": [
+            {
+              "file": "frames/mage-suyingyue/hit/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                35,
+                5,
+                335,
+                406
+              ],
+              "sha256": "2be38d87816c2b3cbff6101a1d5050f4728753a822a35f077d92e3c665c87951"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                364,
+                8,
+                684,
+                406
+              ],
+              "sha256": "60ce85f7390c6c5ec33808a80fa063c1bcb2b9a20928e54e6e52ea8feef90d14"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                691,
+                18,
+                1006,
+                405
+              ],
+              "sha256": "c601b6f18083c7c96bec8f3d13de758b3945d2f86de96fefb7234e00519a7de3"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                37,
+                408,
+                373,
+                780
+              ],
+              "sha256": "3b0d3b7e6407f60ac7f05fa530e012fd9e3db565a8b0c8add3ed36ddc9984de4"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                386,
+                416,
+                682,
+                777
+              ],
+              "sha256": "222c62f1c2ec8ebb032ee030404a4756ebbfd901ea544b971b9eb1c1a38f5fab"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                699,
+                419,
+                992,
+                776
+              ],
+              "sha256": "ab2148cda2405adcaac48d18a602ac26168aad8ccc799e60bbd35c9f7689d4c4"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                26,
+                773,
+                343,
+                1170
+              ],
+              "sha256": "09f2e31a87c73c2fc0992d1c669fc386103dd72235f5d09b2259b731e5f190ac"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                355,
+                781,
+                687,
+                1172
+              ],
+              "sha256": "c88ab57ec016cf00d82b8befdeedc61e89987377ca3a20930df070cac784b702"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                699,
+                775,
+                1009,
+                1173
+              ],
+              "sha256": "d28df0c44bcff8ab5099ac487365ddb0d5e01ee481021d47706933bbd13101e0"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                36,
+                1162,
+                342,
+                1535
+              ],
+              "sha256": "39e1cbf42ac4179e7a1c1817157143b0946055de73c912d08061424983e28068"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                368,
+                1166,
+                684,
+                1535
+              ],
+              "sha256": "6be6e863d4dc3c45e795b6fc9af12009278abc086d300d5ea5c5605548901767"
+            },
+            {
+              "file": "frames/mage-suyingyue/hit/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                705,
+                1160,
+                1006,
+                1535
+              ],
+              "sha256": "52aeb68037d5d92e8a7755f5ce424e11a724095c17d98c4b5e73c47c65e1022e"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8558139534883721
+        }
+      ]
+    },
+    {
+      "id": "healer-shenzhiwei",
+      "name": "沈知微",
+      "profession": "医师",
+      "version": 3,
+      "frameSize": [
+        512,
+        512
+      ],
+      "pivot": {
+        "x": 256,
+        "y": 440
+      },
+      "reference": "../cast-v5/healer-shenzhiwei.png",
+      "view": "three-quarter front/right",
+      "method": "whole-figure sprite frames; uniform scaling only, no skeletal reconstruction or body warping",
+      "fit": 0.8,
+      "clips": [
+        {
+          "id": "idle",
+          "name": "待机",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 1000,
+          "atlas": "atlases/healer-shenzhiwei-idle.png",
+          "gifPreview": "previews/healer-shenzhiwei-idle.gif",
+          "frames": [
+            {
+              "file": "frames/healer-shenzhiwei/idle/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                51,
+                12,
+                311,
+                393
+              ],
+              "sha256": "e866872ad5ea83a68972b25caaa943b8e21313b65cfd6583bace6a6dd17b4709"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                367,
+                10,
+                660,
+                392
+              ],
+              "sha256": "cbe70e3bb79cfab4f4183af2fb3a5f694b0af19543e5b4949c505106534c9e71"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                718,
+                10,
+                1005,
+                392
+              ],
+              "sha256": "9a7c4db84d73668e22ecef6ccefc4fbc764b55074b26fc3988111afa45eb797c"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                15,
+                391,
+                348,
+                778
+              ],
+              "sha256": "a6c63eddce48b93fe076cf59444908adbd54abef73ba9421966986f5ec615b88"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                358,
+                390,
+                682,
+                778
+              ],
+              "sha256": "2d9c03c4a38504a67ef9e95e3a452dca7444226a0bf057935e8af33ad6345c04"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                701,
+                392,
+                1022,
+                778
+              ],
+              "sha256": "094b0683dcb2c10def2a9d9bef163c75f0cbb7637fd385ae708f5faf85f10359"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                38,
+                775,
+                332,
+                1163
+              ],
+              "sha256": "df8bacd613f84d779d3c27511e22cba160e6324fffa19e0b8a78def823239f15"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                368,
+                776,
+                668,
+                1164
+              ],
+              "sha256": "3907b73804efd57213f9c04c97a2cde62ade16372be145618d5470667ecc7f9d"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                708,
+                775,
+                1005,
+                1163
+              ],
+              "sha256": "fc841cbb2178ec1135dedef744c23371493fbf54d4defa61a0092ae0d3fdf79e"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/10.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                45,
+                1162,
+                320,
+                1535
+              ],
+              "sha256": "109b7c08023fbf36609e04d8dd90bda4e23c8db7d35f91f71ca48bc5d075056d"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/11.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                377,
+                1162,
+                656,
+                1535
+              ],
+              "sha256": "9d9eba18d4660458d9d4eb309b3631fc88b7ff8a40be5f4f87cb42b300a33dec"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/idle/12.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                721,
+                1162,
+                993,
+                1535
+              ],
+              "sha256": "163303897407a44dba49b4f934a5c916f15629a85323ab2ae5a4688d8f4bc4bb"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8625
+        },
+        {
+          "id": "walk",
+          "name": "行走",
+          "fps": 12,
+          "loopInGame": true,
+          "durationMs": 750,
+          "atlas": "atlases/healer-shenzhiwei-walk.png",
+          "gifPreview": "previews/healer-shenzhiwei-walk.gif",
+          "frames": [
+            {
+              "file": "frames/healer-shenzhiwei/walk/01.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                105,
+                112,
+                331,
+                439
+              ],
+              "sha256": "a6624f02f07a9fcc0017fd241e662dbcaa587a653146bb31fd8946ed2059373c"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/walk/02.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                593,
+                114,
+                843,
+                439
+              ],
+              "sha256": "759e7fdf9bd493576b12d3a4a849fcbdc6c0b1a8eb2b0ca09c665a39132888ad"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/walk/03.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1099,
+                112,
+                1332,
+                439
+              ],
+              "sha256": "626fc1bda75e7e70e5212d6b486c94e0f14b7452359ba6673d73bb70ee3b1fd3"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/walk/04.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                98,
+                621,
+                331,
+                953
+              ],
+              "sha256": "7497c56cd87d0a438cf22e658c52fe03973424c816d6a2db9e1b11e8654cc372"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/walk/05.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                592,
+                620,
+                834,
+                951
+              ],
+              "sha256": "30ce170ab246b5f60262e0277012ffa80410d32dd77724938a0c1c204f5dc340"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/walk/06.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1095,
+                623,
+                1332,
+                954
+              ],
+              "sha256": "4ecb772f128ff1915043d9a735dfaf1f9b092f473322549e5882ce62acadaf2e"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/walk/07.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                131,
+                1134,
+                431,
+                1464
+              ],
+              "sha256": "6d66539477359b11e927ef5fbaf40576002075bad2523b0289b75d1626c2314f"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/walk/08.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                659,
+                1133,
+                910,
+                1464
+              ],
+              "sha256": "0b17d418815ad9796cadc3a7f123c7514e1c08046987f60e58ec5c5e7993ad52"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/walk/09.png",
+              "durationMs": 83.33333333333333,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                1146,
+                1133,
+                1407,
+                1463
+              ],
+              "sha256": "cf1a9a3d12c8e1c53778cde82a627af5ca6f792f1a746a34d7ed10f5f4faa293"
+            }
+          ],
+          "sourceSize": [
+            1536,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            3
+          ],
+          "uniformScale": 1.0036363636363637
+        },
+        {
+          "id": "attack",
+          "name": "普通攻击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/healer-shenzhiwei-attack.png",
+          "gifPreview": "previews/healer-shenzhiwei-attack.gif",
+          "frames": [
+            {
+              "file": "frames/healer-shenzhiwei/attack/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                49,
+                2,
+                338,
+                406
+              ],
+              "sha256": "aa533d9f572d97ff742144a25014fda82fd74405b5b174caf83384626e0ca349"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                375,
+                1,
+                659,
+                404
+              ],
+              "sha256": "981b0a2f3f5516f71690b30d8c0589ce60f5471e5ef87284fb2177ed733492e1"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                707,
+                2,
+                988,
+                406
+              ],
+              "sha256": "0d5fb148e7355c9aaca6a43bf88103bac9631f481a8305a0315b49cc4729c71e"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                38,
+                402,
+                351,
+                799
+              ],
+              "sha256": "e515de8714762e6fc249b3b558625a5c5d227128fa462213df0e799842790449"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                372,
+                401,
+                689,
+                799
+              ],
+              "sha256": "a1d973b5496248482e7a2b6e84da4b5cc9655e096d20474a489c28296c65abc4"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                687,
+                402,
+                994,
+                799
+              ],
+              "sha256": "b81a70f652c5d311527d641f419b4d1fea5c19fb8b90eb088dc79a873a2c1877"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                55,
+                797,
+                353,
+                1178
+              ],
+              "sha256": "7ea2fd317b976a33e4bab6ea1f5100030d33a2a6dfef50765f08919ac0ac6a4a"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                377,
+                797,
+                667,
+                1179
+              ],
+              "sha256": "41376e172a5b3e5caec0ef1c1dacc9bf53a1150cd03c68750a16c1219225e319"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                689,
+                799,
+                990,
+                1179
+              ],
+              "sha256": "546bfcc425d2d03371dbfd9c6b479f23be50691a1d0959a10ab30c52df776bd7"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                62,
+                1172,
+                343,
+                1535
+              ],
+              "sha256": "779cbd53e90cc23f2343a414f2e12d80c488c4c913a53e0ac17649a738267677"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                370,
+                1174,
+                667,
+                1535
+              ],
+              "sha256": "757bd65e13e8c68f977ef8b7e0a1ac3176a9fb6ed9e12171c4a0ab83e364070f"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/attack/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                703,
+                1171,
+                980,
+                1535
+              ],
+              "sha256": "50ae5e6d09cc944af9cf7504f4ca0a70401d5e52657b4304e91fdcc7a85bc8cd"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8342569269521412
+        },
+        {
+          "id": "cast",
+          "name": "施法",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/healer-shenzhiwei-cast.png",
+          "gifPreview": "previews/healer-shenzhiwei-cast.gif",
+          "frames": [
+            {
+              "file": "frames/healer-shenzhiwei/cast/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                40,
+                17,
+                331,
+                414
+              ],
+              "sha256": "943c7fd2f64b18a18058aaf5fa00192960cddc815d57b0b5f1f6a2af59bbcd5a"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                384,
+                16,
+                673,
+                411
+              ],
+              "sha256": "50fbc940e68fd26cdab13231eac90a471458b152c9efff1ecab68d90a460b004"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                713,
+                18,
+                1013,
+                412
+              ],
+              "sha256": "a53d9167d181eb105a599b6779f6d30b73fcd2786e38af1f7e716fd4bf11abf4"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                36,
+                410,
+                342,
+                799
+              ],
+              "sha256": "85f9fe8732a11048354ef7add984c04fa308bd689d962122eaa19e28ebc524c9"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                375,
+                410,
+                680,
+                797
+              ],
+              "sha256": "cff28c9d8a311eff791c32fbe7a1fe964ca9f422004ffe857e60af5d866faeec"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                690,
+                410,
+                1014,
+                799
+              ],
+              "sha256": "d4141b9280abe6e3b385eb524b5e45f54b228545512f22fd30f8a952f947cae8"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                12,
+                795,
+                350,
+                1163
+              ],
+              "sha256": "cd5f46f312e55a1f2c38dd67439301555b6426f4c59a55ca391a2961d1fcc289"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                361,
+                794,
+                684,
+                1162
+              ],
+              "sha256": "1bd9f8aebf29a7af647f9d7412558b7d79582cc719fc033b68958c484989202e"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                682,
+                798,
+                1016,
+                1162
+              ],
+              "sha256": "7d6d7cc0857238633c4f7e4c88d1b25ce02eb512199e49d4b4b167f2b58e8276"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                39,
+                1151,
+                332,
+                1531
+              ],
+              "sha256": "35e6012d260a9e6d0228354b43d0fcfd4493ee5205c660352783b26f0294866c"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                387,
+                1152,
+                676,
+                1531
+              ],
+              "sha256": "47f034e3bdc6e757a489dd7aae49100db7dfcfae42db38a11bbf2890386100a2"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/cast/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                715,
+                1152,
+                994,
+                1534
+              ],
+              "sha256": "8e367db839e78bbe827d812e7dab23106ca7ad7da6fb177d396369b5dab9aa18"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8625
+        },
+        {
+          "id": "hit",
+          "name": "受击",
+          "fps": 18,
+          "loopInGame": false,
+          "durationMs": 666.6666666666666,
+          "atlas": "atlases/healer-shenzhiwei-hit.png",
+          "gifPreview": "previews/healer-shenzhiwei-hit.gif",
+          "frames": [
+            {
+              "file": "frames/healer-shenzhiwei/hit/01.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                47,
+                2,
+                332,
+                385
+              ],
+              "sha256": "2ae6d3ce310a9fcc3bf8ed8bb727b0495d26c691916117e1a4ec05c25c11061f"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/02.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                371,
+                5,
+                662,
+                386
+              ],
+              "sha256": "7da7f311ee33facc906fda96210cbf2ee9fc61fd63bf791f6e51d1c321bdc2b4"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/03.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                705,
+                6,
+                1000,
+                385
+              ],
+              "sha256": "ce57a1aca9370def4f20bd328756fb099fdd31a8063881a68193f59c134da6ff"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/04.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 0,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                40,
+                392,
+                352,
+                760
+              ],
+              "sha256": "34018a774af39a6637610a54c29a8da4abd56ac817d8964f502e82dfd6a70f65"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/05.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                371,
+                396,
+                689,
+                761
+              ],
+              "sha256": "0a094abb21c5d305c0c4f8c9007311002a72d8f2b9163cd882faf2d5a66cf0f4"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/06.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                706,
+                395,
+                1000,
+                762
+              ],
+              "sha256": "7e08d3d7580d76147ab386af11581c9dc200ffb1c1ac9bbd613be9553fc7be8a"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/07.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                54,
+                764,
+                351,
+                1141
+              ],
+              "sha256": "cf2adb2d00694b95c5e1e8382c3fa34b751d4e4fc3e31cb30e71dc59b6814b8f"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/08.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 512,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                379,
+                767,
+                682,
+                1143
+              ],
+              "sha256": "a10941ad7c204533d68f298f8682210c6c7bf033b51d795d9bb1a5c8d7d91eac"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/09.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 0,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                716,
+                766,
+                1004,
+                1143
+              ],
+              "sha256": "1ac803b721ee59388c023af04a88dd7452da931e8dd53f51e157aafef2d395c4"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/10.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 512,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                51,
+                1144,
+                334,
+                1528
+              ],
+              "sha256": "2ae5f68560f939833a7b5daf8b379f0717fe3cf287bfea612c8be18f9729c8d9"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/11.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1024,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                368,
+                1146,
+                660,
+                1528
+              ],
+              "sha256": "5689bc6ff767b5b90406485a3d1414a1b8a68b30869eb1d534d6757f8893701e"
+            },
+            {
+              "file": "frames/healer-shenzhiwei/hit/12.png",
+              "durationMs": 55.55555555555556,
+              "atlas": {
+                "x": 1536,
+                "y": 1024,
+                "width": 512,
+                "height": 512
+              },
+              "sourceBounds": [
+                710,
+                1144,
+                992,
+                1528
+              ],
+              "sha256": "bd7fc61fd23bfec4161bf1c39d483426171da959a0eda9bbbb24ccdca2342b96"
+            }
+          ],
+          "sourceSize": [
+            1024,
+            1536
+          ],
+          "sourceGrid": [
+            3,
+            4
+          ],
+          "uniformScale": 0.8738786279683378
+        }
+      ]
+    }
+  ]
+}

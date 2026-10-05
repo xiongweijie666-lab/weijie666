@@ -1,0 +1,34 @@
+✔ safe roads and standing still never start an encounter (1.7059ms)
+✔ walking in each region randomly encounters its own species and level (0.9163ms)
+✔ encounter rolls can fail and only walking allows the next roll (0.2629ms)
+✔ only party leader movement starts a shared encounter (0.8551ms)
+✔ random encounters retain baby and mutant rolls and full-party ten-monster cap (0.5171ms)
+✔ leaving the region clears accumulated encounter distance (0.1339ms)
+✔ returning from battle grants a walking buffer before another encounter (0.7915ms)
+✔ five fixed encounter regions and three qualities (0.5094ms)
+✔ party caps at five including real players; repeat joining is idempotent (0.4064ms)
+✔ NPC companions also count toward the five seats (0.205ms)
+✔ solo encounter contains exactly one or two enemies (0.1752ms)
+✔ two to five heroes scale to their own count through twice that count, at most ten (0.668ms)
+✔ a successful capture removes the enemy and persists one owned equipped pet (0.2497ms)
+✔ capture can fail and still consumes a turn without creating a pet (0.1816ms)
+✔ a captured pet participates next battle without increasing enemy scaling (0.304ms)
+✔ foreign pets and friendly capture targets are rejected without spending a turn (0.1721ms)
+✔ skill one unlocks at character level three and rejection does not spend mana (0.3508ms)
+✔ ultimate needs both level fifteen and one hundred rage (0.1635ms)
+✔ party composition cannot change during an active shared fight (0.1565ms)
+✔ doctor healing spends mana, restores an ally and inflicts no enemy damage (0.1583ms)
+✔ mage primary target does not also receive splash damage (0.1328ms)
+✔ third-attack passive stays inactive below five and activates from five (0.4447ms)
+✔ HTTP walking starts a shared random battle and schedules automatic actors (127.7254ms)
+✔ HTTP five-member party rejects sixth member and gives at most ten enemies (154.9036ms)
+✔ HTTP simultaneous commands resolve only one action and reject unauthenticated calls (15.8704ms)
+✔ HTTP captures and equipped pets survive server restart with the same session (22.661ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 396.5938

@@ -1,0 +1,4 @@
+[
+  {"id":"hp-pill","name":"回春散","resource":"hp","amount":80,"description":"恢复80点气血。地图中用于自己，战斗中可用于一名存活的己方人物或宠物，消耗一次行动。"},
+  {"id":"mp-pill","name":"灵露","resource":"mp","amount":40,"description":"恢复40点法力。地图中用于自己，战斗中可用于一名存活的己方人物，消耗一次行动。"}
+]
